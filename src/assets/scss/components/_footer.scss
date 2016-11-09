@@ -1,0 +1,16 @@
+footer {
+  background-color: transparent;
+  padding: rem-calc(10 0 100);
+  font-size: rem-calc(12);
+  .menu {
+    .menu-item {
+      display: inline-block;
+      a {
+        font-size: rem-calc(14);
+      }
+    }
+  }
+  a {
+    text-transform: none;
+  }
+}

@@ -1,0 +1,25 @@
+i {
+  &.phone {
+    svg {
+      width: 18px;
+      height: 18px;
+      path {
+        fill: $white;
+      }
+    }
+  }
+  &.heart {
+    svg {
+      width: 18px;
+      height: 18px;
+      path {
+        fill: #09bb82;
+      }
+    }
+  }
+}
+.top-bar {
+  i {
+    //position: absolute;
+  }
+}

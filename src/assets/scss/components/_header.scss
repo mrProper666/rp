@@ -1,0 +1,16 @@
+header {
+  background-color: $white;
+  border-bottom: 1px solid $black;
+  padding: rem-calc(26 0 24);
+  .menu {
+    li {
+      a {
+        font-size: rem-calc(18);
+        color: $dark-gray;
+        &.top-offers {
+          color: $white;
+        }
+      }
+    }
+  }
+}

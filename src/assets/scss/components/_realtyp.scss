@@ -1,0 +1,132 @@
+/* Functions */
+/// Test if `$value` is a valid direction
+/// @param {*} $value - Value to test
+/// @return {Bool}
+@function is-direction($value) {
+  $is-keyword: index((to top, to top right, to right top, to right, to bottom right, to right bottom, to bottom, to bottom left, to left bottom, to left, to left top, to top left), $value);
+  $is-angle: type-of($value) == 'number' and index('deg' 'grad' 'turn' 'rad', unit($value));
+
+  @return $is-keyword or $is-angle;
+}
+
+/// Convert a direction to legacy syntax
+/// @param {Keyword | Angle} $value - Value to convert
+/// @require {function} is-direction
+/// @require {function} convert-angle
+/// @throw Cannot convert `#{$value}` to legacy syntax because it doesn't seem to be a direction.;
+@function legacy-direction($value) {
+  @if is-direction($value) == false {
+    @error "Cannot convert `#{$value}` to legacy syntax because it doesn't seem to be a direction.";
+  }
+
+  $conversion-map: (
+    to top          : bottom,
+    to top right    : bottom left,
+    to right top    : left bottom,
+    to right        : left,
+    to bottom right : top left,
+    to right bottom : left top,
+    to bottom       : top,
+    to bottom left  : top right,
+    to left bottom  : right top,
+    to left         : right,
+    to left top     : right bottom,
+    to top left     : bottom right
+  );
+
+  @if map-has-key($conversion-map, $value) {
+    @return map-get($conversion-map, $value);
+  }
+
+  @return 90deg - $value;
+}
+/* //Functions */
+
+/* Local mixins */
+@mixin place-region-icon {
+  svg {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    bottom: -4px;
+    path {
+      fill: $white;
+    }
+  }
+}
+@mixin myclearfix {
+  @iclude clearfix;
+  height: 0;
+  overflow: hidden;
+}
+@mixin linear-gradient($direction, $color-stops...) {
+  // Direction has been omitted and happens to be a color-stop
+  @if is-direction($direction) == false {
+    $color-stops: $direction, $color-stops;
+    $direction: 180deg;
+  }
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+/* //Local mixins */
+
+/* Foundation overrides */
+.is-dropdown-submenu {
+  min-width: inherit;
+}
+/* --- */
+
+/* Common styles */
+::-moz-selection { background: #069c95; color: $white; }
+::selection { background: #069c95; color: $white; }
+.row.expanded {
+  .columns {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.h-all-caps {
+  h1, h2, h3 {
+    text-align: center;
+    //text-transform: uppercase;
+    margin-bottom: rem-calc(24);
+  }
+  &.lite {
+    h1, h2, h3 {
+      //font-weight: 400;
+      font-family: hkgrotesk-light;
+    }
+  }
+}
+form {
+  select {
+    color: rgba($dark-gray, .5);
+  }
+}
+.cover-bg-image {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba($black, 0);
+  background-image: none;
+  background-origin: padding-box;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.button {
+  &.alt {
+    background: transparent;
+    border-color: transparent;
+  }
+  &.show-all {
+    margin: rem-calc(50 0 30);
+  }
+}
