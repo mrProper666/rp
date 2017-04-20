@@ -1,45 +1,83 @@
-<div class="top-bar stacked-for-medium">
+
+<div id="topbar" class="top-bar stacked-for-medium">
 	<div class="row">
 		<div class="small-12 columns">
 			<div class="top-bar-title">
-				<span class="brand hide-for-medium"><a href="/"><img class="svg" src="assets/img/logo-realtyplanex-white.svg" alt="logo header" /></a></span>
+				<span class="brand hide-for-medium"><a href="index.html"><img class="svg" src="assets/img/logo-realtyplanex-white.svg" alt="logo header" /></a></span>
 			</div>
 			<div class="text-right">
 				<span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-					<button class="menu-icon dark" type="button" data-toggle></button>
+					<button class="menu-icon light" type="button" data-toggle></button>
 				</span>
 			</div>
 			<div id="responsive-menu" class="mobile-menu">
+				<div class="show-for-small-only">
+					<ul class="menu vertical">
+		        <li class="menu-item {{#ifpage 'residential'}}active{{/ifpage}}"><a href="residential.html">Жилищни имоти</a></li>
+		        <li class="menu-item {{#ifpage 'business'}}active{{/ifpage}}"><a href="business.html">Бизнес имоти</a></li>
+		        <li class="menu-item {{#ifpage 'holiday'}}active{{/ifpage}}"><a href="holiday.html">Ваканционни имоти</a></li>
+		        <li class="menu-item {{#ifpage 'all-properties'}}active{{/ifpage}}"><a href="all-properties.html">Всички имоти</a></li>
+		        <li class="menu-item"><a href="#" class="top-offers-button button">Топ офери</a></li>
+		      </ul>
+				</div>
 				<div class="top-bar-right">
-					<ul class="menu">
-						<li class="menu-item item1">
-							<a href="tel:+35952600936"><i class="phone"><img class="svg" src="assets/img/icon-phone.svg" alt="heart" /></i><span>+359 52 600 936</span></a>
+					<ul class="menu locales no-icons">
+						<li class="menu-item item1 active">
+							<a href="#"><span>Изпратете запитване</span></a>
+						</li>
+						<li class="menu-item item2 separator">
+							<a href="mailto:sales@planex.bg"><span>sales@planex.bg</span></a>
 						</li>
 					</ul>
 					<ul class="dropdown menu no-icons" data-dropdown-menu>
-						<li class="menu-item item4">
-							<a href="#"><span>About us</span></a>
+						<li class="dropdown menu-item item4 {{#ifpage 'about'}}active{{/ifpage}}"><a href="about.html"><span>Planex</span></a></li>
+						{{!--<li class="dropdown menu-item item4 {{#ifpage 'about'}}active{{/ifpage}}"><a href="#"><span>Planex</span></a>
 							<ul class="menu vertical">
-								<li><a href="#"><span>Company</span></a></li>
-		            <li><a href="#"><span>Services</span></a></li>
+								<li><a href="about.html"><span>Company</span></a></li>
 		            <li><a href="#"><span>Portfolio</span></a></li>
 							</ul>
-						</li>
-						<li class="menu-item item5"><a href="#"><span>Actual</span></a></li>
-						<li class="menu-item item7"><a href="#"><span>Contacts</span></a></li>
+						</li>--}}
+						<li class="menu-item item5 {{#ifpage 'service-1' 'service-2' 'service-3' 'service-4' 'service-5'}}active{{/ifpage}}"><a href="service-1.html"><span>Услуги</span></a></li>
+						<li class="menu-item item6 {{#ifpage 'blog'}}active{{/ifpage}}"><a href="blog.html"><span>Блог</span></a></li>
+						<li class="menu-item item7 {{#ifpage 'contact'}}active{{/ifpage}}"><a href="contact.html"><span>Контакти</span></a></li>
 					</ul>
 					<ul class="menu locales no-icons">
-						<li class="menu-item active"><a href="#">EN</a></li>
-						<li class="menu-item"><a href="#">BG</a></li>
-						<li class="menu-item"><a href="#">RU</a></li>
+						<li class="menu-item active"><a href="#"><span>EN</span></a></li>
+						<li class="menu-item"><a href="#"><span>BG</span></a></li>
+						<li class="menu-item"><a href="#"><span>RU</span></a></li>
+					</ul>
+					<ul class="menu locales search" style="display: none;">
+						<li class="menu-item"><a href="#" data-toggle="quick-search-form"><i class="top-search"><img class="svg" src="assets/img/icon-search.svg" alt="search" /></i></a></li>
+						<li class="quick-search-form" id="quick-search-form" data-toggler=".expanded" data-animate="slide-in-from-top hide-out">
+							<form>
+								<div class="row">
+									<div class="small-12 columns">
+										<div class="input-group">
+											<input type="text" name="quick-search" id="quick-search" class="input-group-field input-text" placeholder="Search site" />
+											<div class="input-group-button">
+												<input type="button" title="search" value="Search" class="button" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</li>
 					</ul>
 					<ul class="menu favorites hide-for-small-only">
 						<li class="menu-item">
-							<a href="#" class="button"><span>Favorites</span>
+							<a href="izbrani-imoti.html" class="button"><span>Избрани имоти</span>
 								<i class="heart"><img class="svg" src="assets/img/icon-heart.svg" alt="heart" /></i>
-								<sup class="fav-icon">2</sup>
+								<sup class="fav-nums">2</sup>
 							</a>
 						</li>
+						<ul class="menu vertical favorites-menu">
+              <li class="favorite-item">
+                <span><a href="#">Apartament 18</a></span><span class="delete-item"><a href="#">x</a></span>
+              </li>
+              <li class="favorite-item">
+                <span><a href="#">Apartament 20</a></span><span class="delete-item"><a href="#">x</a></span>
+              </li>
+            </ul>
 					</ul>
 				</div>
 			</div>

@@ -4,10 +4,11 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
+@import 'hover';
 
 @include foundation-global-styles;
 @include foundation-grid;
-// @include foundation-flex-grid;
+@include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -45,15 +46,26 @@
 @include foundation-top-bar;
 @include foundation-visibility-classes;
 @include foundation-float-classes;
-// @include foundation-flex-classes;
+@include foundation-flex-classes;
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
 @import 'components/realtyp';
+@import 'components/forms';
 @import 'components/topbar';
 @import 'components/header';
 @import 'components/footer';
 @import 'components/icons';
 
 @import 'components/home';
+@import 'components/about';
+@import 'components/services';
+@import 'components/contact';
+@import 'components/projects';
+@import 'components/object';
+@import 'components/property';
+@import 'components/blog';
+@import 'components/top-offer-block';
+@import 'components/search';
+@import 'components/mobile';

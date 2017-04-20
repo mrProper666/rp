@@ -1,16 +1,17 @@
-<header class="">
+<header class="hide-for-small-only">
 	<div class="row">
-		<div class="medium-2 columns hide-for-small-only">
+		<div class="medium-3 columns">
 			<div class="top-header left">
-        <a href="/"><img class="svg" src="assets/img/logo-realtyplanex.svg" alt="logo header" /></a>
+        <a href="index.html"><img class="svg" src="assets/img/logo-realtyplanex.svg" alt="logo header" /></a>
       </div>
 		</div>
-    <div class="small-12 medium-10 columns">
+    <div class="small-12 medium-9 columns">
       <ul class="menu float-right">
-        <li class="menu-item"><a href="#">Residential property</a></li>
-        <li class="menu-item"><a href="#">Commercial</a></li>
-        <li class="menu-item"><a href="#">Holiday properties</a></li>
-        <li class="menu-item"><a href="#" class="top-offers-button button">Top offers</a></li>
+        <li class="menu-item {{#ifpage 'residential'}}active{{/ifpage}}"><a href="residential.html">Жилищни имоти</a></li>
+        <li class="menu-item {{#ifpage 'business'}}active{{/ifpage}}"><a href="business.html">Бизнес имоти</a></li>
+        <li class="menu-item {{#ifpage 'holiday'}}active{{/ifpage}}"><a href="holiday.html">Ваканционни имоти</a></li>
+        <li class="menu-item {{#ifpage 'all-properties'}}active{{/ifpage}}"><a href="all-properties.html">Всички имоти</a></li>
+        <li class="menu-item"><a href="#" class="top-offers-button button">Топ офери</a></li>
       </ul>
     </div>
 	</div>

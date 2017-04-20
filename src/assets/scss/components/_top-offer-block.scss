@@ -1,0 +1,157 @@
+.top-offer-object {
+  position: relative;
+  background-color: $white;
+  box-shadow: 0px 2px 3px rgba($black, 0.2);
+  @include breakpoint(iphone5 down) {
+    font-size: rem-calc(16);
+  }
+  &>div {
+    padding: 0 1rem;
+  }
+  .object-wrapper {
+    position: relative;
+    padding: 0;
+    margin-bottom: rem-calc(6);
+    overflow: hidden;
+    .object-image {
+      overflow: hidden;
+      position: relative;
+      height: 260px;
+      img {
+        position: absolute;
+        height: 260px;
+        max-width: inherit;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        -webkit-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+      }
+    }
+    .object-info {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      color: $white;
+      padding: 3rem 0 0.75rem;
+      background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+      background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000', GradientType=0 );
+      -webkit-transition: all 0.33s ease 0.2s;
+      transition: all 0.33s ease 0.2s;
+      &.has-estates {
+        bottom: -80px;
+      }
+      h3 {
+        margin: 0;
+      }
+      hr {
+        margin: 5px auto;
+        width: 10%;
+      }
+      .place {
+        @include place-region-icon;
+      }
+      .region {
+        @include place-region-icon;
+      }
+    }
+  }
+  .estates-info {
+    //font-size: rem-calc(15);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $medium-gray;
+    .icon {
+      padding-top: 5px;
+      background-color: $white;
+      -webkit-transition: background-color 0.33s ease 0s, border-color 0.33s ease 0s;
+      transition: background-color 0.33s ease 0s, border-color 0.33s ease 0s;
+      .promo-text {
+        font-size: rem-calc(10);
+        color: $orange-color;
+        text-transform: uppercase;
+        white-space: nowrap;
+        position: relative;
+        top: -5px;
+        -webkit-transition: color 0.33s ease 0s;
+        transition: color 0.33s ease 0s;
+      }
+      svg {
+        width: 36px;
+        height: 36px;
+        path {
+          fill: $dark-gray;
+          -webkit-transition: fill 0.33s ease 0s;
+          transition: fill 0.33s ease 0s;
+        }
+      }
+    }
+    .estate-rzp,
+    .estate-complete-txt {
+      color: #858585;
+      font-family: 'hkgrotesk-light', Arial, sans-serif;
+      text-transform: none;
+    }
+    .estate-area,
+    .esate-completed {
+      color: $dark-gray;
+      font-family: 'hkgrotesk-bold', Arial, sans-serif;
+      text-transform: none;
+    }
+    .esate-completed {
+      white-space: nowrap;
+    }
+    &:hover {
+      .icon {
+        //background-color: $dark-gray;
+        //border-color: $white;
+        svg {
+          path {
+            fill: scale-color($dark-gray, $lightness: 60%)
+          }
+        }
+      }
+      .object-info {
+      }
+      .promo-text {
+        color: $white;
+      }
+    }
+    .view-gallery,
+    .view-offer {
+      font-size: rem-calc(13);
+      //text-transform: uppercase;
+      color: #069c95;
+      text-align: center;
+      display: block;
+      &:hover {
+        color: scale-color(#069c95, $lightness: 10%);
+      }
+    }
+  }
+  .show-all-top-estates {
+    text-align: center;
+    margin-top: rem-calc(16);
+    .button.gray {
+      color: $white;
+      border-color: $white;
+      &:hover {
+        color: $dark-gray;
+      }
+    }
+  }
+  &:hover {
+    .object-info {
+      &.has-estates {
+        bottom: 0;
+        padding-top: 15rem;
+        -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.39,0.575,0.565,1), padding 0.4s cubic-bezier(0.39,0.575,0.565,1);
+        transition: bottom 0.4s cubic-bezier(0.39,0.575,0.565,1), padding 0.4s cubic-bezier(0.39,0.575,0.565,1);
+      }
+    }
+  }
+}

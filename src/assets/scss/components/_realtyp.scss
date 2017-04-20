@@ -72,8 +72,36 @@
 /* //Local mixins */
 
 /* Foundation overrides */
+html, body {
+  //overflow-x: hidden;
+}
 .is-dropdown-submenu {
   min-width: inherit;
+}
+.menu {
+  .active {
+    &>a {
+      background-color: transparent;
+      color: $primary-color;
+    }
+  }
+}
+.small-up-2 > .column,
+.small-up-2 > .columns {
+  @include breakpoint(iphone5 down) {
+    width: 48%;
+    -ms-flex: 0 0 48%;
+    flex: 0 0 48%;
+    max-width: 50%;
+  }
+}
+.small-6 {
+  @include breakpoint(iphone5 down) {
+    width: 49%;
+    -ms-flex: 0 0 49%;
+    flex: 0 0 49%;
+    max-width: 50%;
+  }
 }
 /* --- */
 
@@ -87,13 +115,16 @@
   }
 }
 .h-all-caps {
-  h1, h2, h3 {
-    text-align: center;
+  h1, h2, h3, h4 {
+    //text-align: center;
     //text-transform: uppercase;
-    margin-bottom: rem-calc(24);
+    //margin-bottom: rem-calc(24);
+  }
+  h1 {
+    margin-bottom: rem-calc(32);
   }
   &.lite {
-    h1, h2, h3 {
+    h1, h2, h3, h4 {
       //font-weight: 400;
       font-family: hkgrotesk-light;
     }
@@ -103,6 +134,13 @@ form {
   select {
     color: rgba($dark-gray, .5);
   }
+}
+strong, b {
+  font-family: 'hkgrotesk-bold', Arial, sans-serif;
+}
+p.underlined {
+  border-bottom: 1px solid scale-color($medium-gray, $lightness: 20%);
+  padding-bottom: rem-calc(5);
 }
 .cover-bg-image {
   background-attachment: scroll;
@@ -120,6 +158,7 @@ form {
   height: 100%;
   top: 0;
   left: 0;
+  opacity: 0.3;
 }
 .button {
   &.alt {
@@ -129,4 +168,58 @@ form {
   &.show-all {
     margin: rem-calc(50 0 30);
   }
+}
+.hline-separator {
+  width: rem-calc(130);
+  border: none;
+  background-color: #8d8d8d;
+  height: 1px;
+  margin: rem-calc(35) auto rem-calc(25);
+}
+section, div {
+  &.to-portfolio {
+    background-color: #002230;
+    padding: rem-calc(100 0 80);
+    @include breakpoint(medium down) {
+      padding: rem-calc(30 0 20);
+    }
+    a {
+      color: #20bd71;
+      font-size: rem-calc(15);
+      &:hover {
+        text-decoration: underline;
+      }
+      &.button {
+        font-size: rem-calc(18);
+        color: $white;
+        background-color: #002e41;
+        margin-bottom: 0;
+        text-decoration: none;
+      }
+    }
+    hr {
+      background-color: $white;
+    }
+  }
+}
+.owl-carousel {
+  .owl-controls {
+    .owl-pagination {}
+    .owl-buttons {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      .owl-prev {
+        position: absolute;
+        left: rem-calc(-60);
+      }
+      .owl-next {
+        position: absolute;
+        right: rem-calc(-60);
+      }
+    }
+  }
+}
+div.sticky {
+  z-index: 5;
 }

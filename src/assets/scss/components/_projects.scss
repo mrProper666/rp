@@ -1,0 +1,189 @@
+.ProjectCategoryPage {
+  .header {
+    @include linear-gradient(to right, #069c95, #33ad50);
+    .bg-wrapper{
+      padding: rem-calc(40 0 20);
+      background-repeat: no-repeat;
+      background-position: right top;
+    }
+    .svg {
+      width: rem-calc(85);
+      height: rem-calc(68);
+      path {
+        fill: $white;
+      }
+    }
+    .title {
+      display: inline-block;
+    }
+    h1 {
+      color: $white;
+    }
+    hr {
+      margin-top: rem-calc(20);
+      margin-bottom: rem-calc(5);
+      height: 2px;
+      background-color: $white;
+      width: 100%;
+    }
+  }
+  .listing {
+    background-color: #eceff0;
+    padding: rem-calc(30 0 90);
+    h1 {
+      color: $white;
+    }
+    p {
+      color: #9496a0;
+    }
+    .top-offer-object {
+      position: relative;
+      margin-bottom: rem-calc(30);
+      background-color: $white;
+      box-shadow: 0px 2px 3px rgba($black, 0.2);
+      &>div {
+        padding: 0 1rem;
+      }
+      .object-wrapper {
+        position: relative;
+        padding: 0;
+        margin-bottom: rem-calc(6);
+        overflow: hidden;
+        .object-image {
+          overflow: hidden;
+          position: relative;
+          height: 260px;
+          img {
+            position: absolute;
+            height: 260px;
+            max-width: inherit;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                    transform: translate(-50%,-50%);
+          }
+        }
+        .object-info {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          text-align: center;
+          color: $white;
+          padding: 3rem 0 0.75rem;
+          background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+          background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+          background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000', GradientType=0 );
+          -webkit-transition: all 0.33s ease 0.2s;
+          transition: all 0.33s ease 0.2s;
+          &.has-estates {
+            bottom: -80px;
+          }
+          h3 {
+            margin: 0;
+          }
+          hr {
+            margin: 5px auto;
+            width: 10%;
+          }
+          .place {
+            @include place-region-icon;
+          }
+          .region {
+            @include place-region-icon;
+          }
+        }
+      }
+      .estates-info {
+        //font-size: rem-calc(15);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $medium-gray;
+        .estate-rzp,
+        .estate-complete-txt {
+          color: #858585;
+          font-family: 'hkgrotesk-light', Arial, sans-serif;
+          text-transform: none;
+        }
+        .estate-area,
+        .esate-completed {
+          color: $dark-gray;
+          font-family: 'hkgrotesk-bold', Arial, sans-serif;
+          text-transform: none;
+        }
+        .estate-area.distr {
+          font-family: 'hkgrotesk-light', Arial, sans-serif;
+        }
+        &:hover {
+          .object-info {
+          }
+          .promo-text {
+            color: $white;
+          }
+        }
+        .view-gallery,
+        .view-offer {
+          font-size: rem-calc(13);
+          //text-transform: uppercase;
+          color: #069c95;
+          text-align: center;
+          display: block;
+          &:hover {
+            color: scale-color(#069c95, $lightness: 10%);
+          }
+        }
+      }
+      .show-all-top-estates {
+        text-align: center;
+        margin-top: rem-calc(16);
+        .button.gray {
+          color: $light-gray;
+          border-color: $light-gray;
+          &:hover {
+            color: $dark-gray;
+            background-color: $light-gray;
+          }
+        }
+      }
+      &:hover {
+        .object-info {
+          &.has-estates {
+            bottom: 0;
+            padding-top: 15rem;
+            -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.39,0.575,0.565,1), padding 0.4s cubic-bezier(0.39,0.575,0.565,1);
+            transition: bottom 0.4s cubic-bezier(0.39,0.575,0.565,1), padding 0.4s cubic-bezier(0.39,0.575,0.565,1);
+          }
+        }
+        .object-image {
+          img {
+            //-webkit-transform: scale(1.1);
+            //transform: scale(1.1);
+            //-webkit-transition: -webkit-transform 0.4s cubic-bezier(0.39,0.575,0.565,1);
+            //transition: transform 0.4s cubic-bezier(0.39,0.575,0.565,1);
+          }
+        }
+      }
+    }
+    .button {
+      &.alt {
+        margin-top: rem-calc(36);
+        margin-bottom: rem-calc(40);
+        padding-bottom: rem-calc(16);
+        border-bottom: 1px solid $white;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        &:hover {
+          padding-bottom: rem-calc(8);
+          margin-bottom: rem-calc(48);
+        }
+      }
+    }
+    .all-top-offers {
+      font-size: 1rem;
+      color: $white;
+      border-color: $white;
+      margin-top: rem-calc(60);
+    }
+  }
+}

@@ -1,0 +1,405 @@
+.RealEstate {
+  .property-header {
+    margin: rem-calc(20 0 10);
+    .header-box {
+      background-color: $white;
+      width: 100%;
+      margin-left: rem-calc(15);
+      margin-right: rem-calc(15);
+      box-shadow: 0 1px 2px rgba($dark-gray, 0.3);
+      .text-info {
+        padding: rem-calc(40 15 30);
+        position: relative;
+      }
+      .object-image {
+        padding-right: 0;
+      }
+      h1 {
+        font-size: rem-calc(30);
+        font-family: 'hkgrotesk-light', Arial, sans-serif;
+        color: black;
+      }
+      address {
+        font-size: rem-calc(16);
+        color: $medium-gray;
+        font-style: normal;
+      }
+      .cta {
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+  .submenu {
+    .menu-wrapper {
+      background-color: $white;
+      box-shadow: 0 1px 2px rgba($dark-gray, 0.3);
+      margin-bottom: rem-calc(30);
+      .menu {
+        li {
+          a {
+            font-size: rem-calc(16);
+            border-bottom: 3px solid transparent;
+            //padding-top: rem-calc(18);
+            //padding-bottom: rem-calc(18);
+            &:hover {
+              color: $primary-color;
+            }
+          }
+          &.active {
+            a {
+              color: inherit;
+              border-bottom-color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .info-tabs {
+    padding: rem-calc(70 0 0);
+    @include breakpoint(medium down) {
+      padding-top: rem-calc(0);
+    }
+    h1 {
+      font-size: rem-calc(50);
+      @include breakpoint(medium down) {
+        font-size: rem-calc(30);
+      }
+    }
+  }
+  .general-info {
+    padding-bottom: rem-calc(100);
+    @include breakpoint(medium down) {
+      padding-bottom: rem-calc(40);
+    }
+    .estate-general-info {
+      color: scale-color($medium-gray, $lightness: -30%);
+      .heading {
+        border-bottom: 1px solid scale-color($medium-gray, $lightness: 20%);
+        padding-bottom: rem-calc(5);
+      }
+      .info {
+        color: black;
+        font-size: rem-calc(52);
+      }
+    }
+    .estate-additional-info {
+      color: scale-color($medium-gray, $lightness: -30%);
+      list-style: none;
+      margin: rem-calc(0 0 80);
+      li {
+        border-bottom: 1px solid scale-color($medium-gray, $lightness: 20%);
+        padding: rem-calc(30 20 5 0);
+        &:last-child {
+          position: relative;
+        }
+      }
+      .price {
+        color: black;
+        &.old-price {
+          color: $dark-gray;
+        }
+        &.new-price {
+          color: #ed1f24;
+          .icon {
+            width: rem-calc(20);
+            height: rem-calc(20);
+            margin-right: rem-calc(8);
+            margin-top: rem-calc(-2);
+            @include breakpoint(medium down) {
+              display: none;
+            }
+          }
+        }
+      }
+      .promo-description {
+        font-size: rem-calc(13);
+        position: absolute;
+        bottom: rem-calc(-28);
+        @include breakpoint(medium down) {
+          bottom: rem-calc(-44);
+        }
+      }
+    }
+    .floorplans {
+      text-align: center;
+      .floorplan-common {
+        background-color: white;
+        padding: rem-calc(30 15);
+        margin-bottom: rem-calc(20);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+      }
+      .floorplan-floor {
+        background-color: white;
+        padding: rem-calc(30 15);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+      }
+    }
+    .promotions {
+      margin-bottom: rem-calc(50);
+      .column {
+        padding-left: rem-calc(3);
+        padding-right: rem-calc(3);
+        &:first-child {
+          padding-left: rem-calc(15);
+        }
+        &:last-child {
+          padding-right: rem-calc(15);
+        }
+      }
+      .item {
+        padding: rem-calc(16);
+        background-color: $white;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+        .promo-title {
+          //text-align: left;
+          font-size: rem-calc(13);
+          line-height: 1.2;
+        }
+        img,
+        svg {
+          margin-bottom: rem-calc(15);
+        }
+      }
+    }
+  }
+  .actions {
+    font-size: rem-calc(14);
+    color: scale-color($medium-gray, $lightness: 20%);
+    &>.column {
+    @include breakpoint(medium down) {
+      margin-bottom: rem-calc(10);
+    }
+      a {
+        background-color: white;
+        display: block;
+        padding: rem-calc(10 5);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+      }
+    }
+    .action-icon {
+      svg,
+      .svg {
+        max-width: rem-calc(50);
+        max-height: rem-calc(50*3/2);
+        path {
+          fill: #09bb82;
+        }
+      }
+    }
+    h4 {
+      color: #09bb82;
+    }
+  }
+  .shares {
+    font-size: rem-calc(14);
+    color: scale-color($medium-gray, $lightness: 20%);
+    .share {
+      margin: rem-calc(40 0 0);
+      padding: rem-calc(20 0);
+      border-bottom: 1px solid scale-color($medium-gray, $lightness: 20%);
+      border-top: 1px solid scale-color($medium-gray, $lightness: 20%);
+      a {
+        display: inline-block;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .interior {
+    @include linear-gradient(to right, #069c95, #33ad50);
+    padding: rem-calc(10 0 80);
+    h1 {
+      color: $white;
+      padding: rem-calc(90 0 50);
+      @include breakpoint(medium down) {
+        font-size: rem-calc(30);
+        padding: rem-calc(30 0 20);
+      }
+    }
+  }
+  .request-form {
+    background-color: white;
+    padding-top: rem-calc(100);
+    padding-bottom: rem-calc(80);
+    form {
+      .input-text {
+        font-size: rem-calc(24);
+        height: auto;
+        padding: rem-calc(30 5);
+        margin-bottom: 0;
+        margin-top: -1px;
+      }
+      .button {
+        margin-top: rem-calc(50);
+      }
+    }
+    .estate-form-info {
+      color: scale-color($medium-gray, $lightness: -30%);
+      margin-bottom: rem-calc(40);
+      .heading {
+        border-bottom: 1px solid scale-color($medium-gray, $lightness: 20%);
+        padding-bottom: rem-calc(5);
+      }
+      .info {
+        color: black;
+        font-size: rem-calc(52);
+      }
+    }
+  }
+  .similar-properties {
+    @include linear-gradient(to right, #069c95, #33ad50);
+    padding: rem-calc(5 0 150);
+    @include breakpoint(medium down) {
+      padding: rem-calc(5 0 50);
+    }
+    h1 {
+      color: $white;
+      padding: rem-calc(90 0 50);
+      @include breakpoint(medium down) {
+        font-size: rem-calc(30);
+        padding: rem-calc(30 0 20);
+      }
+    }
+    .owl-item {
+      padding: 0 0.55556rem;
+    }
+    .top-offer-object {
+      position: relative;
+      background-color: $white;
+      box-shadow: 0px 2px 3px rgba($black, 0.2);
+      &>div {
+        padding: 0 1rem;
+      }
+      .object-wrapper {
+        position: relative;
+        padding: 0;
+        margin-bottom: rem-calc(6);
+        overflow: hidden;
+        .object-image {
+          overflow: hidden;
+          position: relative;
+          height: 260px;
+          img {
+            position: absolute;
+            height: 260px;
+            max-width: inherit;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                    transform: translate(-50%,-50%);
+          }
+        }
+        .object-info {
+          position: absolute;
+          bottom: -80px;
+          width: 100%;
+          text-align: center;
+          color: $white;
+          padding: 3rem 0 0.75rem;
+          background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+          background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+          background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000', GradientType=0 );
+          //-webkit-transition: -webkit-transform 0.33s ease 0.2s;
+          //transition: bottom 0.33s ease 0.2s;
+          -webkit-transition: all 0.33s ease 0.2s;
+          transition: all 0.33s ease 0.2s;
+
+          h3 {
+            margin: 0;
+          }
+          hr {
+            margin: 5px auto;
+            width: 10%;
+          }
+          .place {
+            @include place-region-icon;
+          }
+          .region {
+            @include place-region-icon;
+          }
+        }
+      }
+      .estates-info {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $medium-gray;
+        .price {
+          color: $dark-gray;
+          &.old-price {
+            text-decoration: line-through;
+            color: $medium-gray;
+            font-family: 'hkgrotesk-light', Arial, sans-serif;
+          }
+          &.new-price {
+            //color: $orange-color;
+            //font-size: rem-calc(18);
+            //font-weight: 700;
+          }
+        }
+        .estate-type {
+          color: $dark-gray;
+          text-transform: none;
+        }
+        .estate-area {
+          color: #858585;
+          text-transform: none;
+          font-family: 'hkgrotesk-light', Arial, sans-serif;
+        }
+        &:hover {
+          .icon {
+            //background-color: $dark-gray;
+            //border-color: $white;
+            svg {
+              path {
+                fill: scale-color($dark-gray, $lightness: 60%);
+              }
+            }
+          }
+          .object-info {
+          }
+          .promo-text {
+            color: $white;
+          }
+        }
+        .view-gallery,
+        .view-offer {
+          font-size: rem-calc(13);
+          //text-transform: uppercase;
+          color: #069c95;
+          text-align: center;
+          display: block;
+          &:hover {
+            color: scale-color(#069c95, $lightness: 10%);
+          }
+        }
+      }
+      .show-all-top-estates {
+        text-align: center;
+        margin-top: rem-calc(16);
+        .button.gray {
+          color: $light-gray;
+          border-color: $light-gray;
+          &:hover {
+            color: $dark-gray;
+            background-color: $light-gray;
+          }
+        }
+      }
+      &:hover {
+        .object-info {
+          bottom: 0;
+          padding-top: 15rem;
+          -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.39,0.575,0.565,1), padding 0.4s cubic-bezier(0.39,0.575,0.565,1);
+          transition: bottom 0.4s cubic-bezier(0.39,0.575,0.565,1), padding 0.4s cubic-bezier(0.39,0.575,0.565,1);
+        }
+      }
+    }
+  }
+}

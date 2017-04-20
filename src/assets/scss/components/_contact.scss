@@ -1,0 +1,122 @@
+.ContactsPage {
+  .offline {
+    color: $white;
+    @include linear-gradient(to left, #0ea054 20%, #069c95 80%);
+    padding-top: rem-calc(60);
+    padding-bottom: 0;
+    @include breakpoint(medium down) {
+      padding-top: rem-calc(20);
+    }
+    .city-name {
+      h1 {
+        font-size: rem-calc(38);
+        margin-bottom: rem-calc(44);
+        @include breakpoint(medium down) {
+          font-size: rem-calc(28);
+          margin-bottom: rem-calc(20);
+        }
+      }
+      span {
+        display: block;
+      }
+    }
+    .general-contact {
+      margin-top: 0;
+    }
+    .info {
+      padding-top: rem-calc(35);
+    }
+    .contact {
+      padding: rem-calc(13 0 40);
+      @include breakpoint(medium down) {
+        padding: rem-calc(30 10 5);
+      }
+      &>span {
+        display: block;
+      }
+      .address {}
+      .phone {
+        //margin-top: rem-calc(20);
+      }
+      .contact-person {}
+      .contact-person-position {
+        font-size: rem-calc(14);
+      }
+      .email {}
+    }
+    &>.row {
+      border-bottom: 1px solid $white;
+      margin-bottom: rem-calc(55);
+      padding-bottom: rem-calc(10);
+      @include breakpoint(medium down) {
+        padding-bottom: rem-calc(30);
+      }
+      &:last-child {
+        border: none;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .ofline-info {
+    background-color: $white;
+    padding: rem-calc(50 0 50);
+    p, a {
+      color: $dark-gray;
+    }
+  }
+  .online {
+    color: $white;
+    background-color: #002230;
+    //@include linear-gradient(to left, #0ea054 20%, #069c95 80%);
+    padding-top: rem-calc(50);
+    padding-bottom: rem-calc(75);
+    h1 {
+      font-size: rem-calc(50);
+      color: $white;
+      @include breakpoint(medium down) {
+        font-size: rem-calc(28);
+      }
+    }
+    form {
+      .input-text {
+        input,
+        textarea {
+          font-size: rem-calc(24);
+          height: auto;
+          padding: rem-calc(30 5);
+          margin-bottom: 0;
+          margin-top: -1px;
+        }
+      }
+      .button {
+        margin-top: rem-calc(50);
+        //background-color: #13e3be;
+      }
+      input,
+      textarea {
+        // Placeholder text
+        &::placeholder {
+          color: $white;
+        }
+      }
+    }
+  }
+  p {
+    font-size: rem-calc(16);
+    color: $white;
+  }
+  a {
+    color: $white;
+    &:hover {
+      color: $white-hover;
+    }
+  }
+  .hline-separator {
+    background-color: $white;
+    margin-left: 0;
+    width: rem-calc(70);
+    @include breakpoint(medium down) {
+      margin: rem-calc(10 0 15);
+    }
+  }
+}

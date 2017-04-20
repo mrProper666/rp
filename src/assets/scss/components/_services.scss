@@ -1,0 +1,132 @@
+.ServicePage {
+  background-color: #eceff0;
+  h1 {
+    font-size: rem-calc(48);
+    line-height: 1;
+    margin-bottom: rem-calc(24);
+    @include breakpoint(medium down) {
+      font-size: rem-calc(28);
+      margin-bottom: rem-calc(15);
+    }
+  }
+  .categories-submenu {
+    @include linear-gradient(to right, #069c95, #33ad50);
+    .row, .mobile.menu {
+      &>div {
+        padding: rem-calc(22 38);
+        position: relative;
+        @include breakpoint(medium down) {
+          padding: rem-calc(10 0);
+        }
+        .service-icon {
+          a {
+            display: block;
+            svg,
+            .svg {
+              path {
+                fill: $white;
+                -webkit-transition: fill 0.4s ease;
+                transition: fill 0.4s ease;
+              }
+              @include breakpoint(medium down) {
+                display: none;
+              }
+            }
+          }
+        }
+        .service-title {
+          a {
+            color: $white;
+            display: block;
+            line-height: 1.2;
+            -webkit-transition: color 0.4s ease;
+            transition: color 0.4s ease;
+          }
+        }
+        &:hover {
+          a {
+            color: $white-hover;
+            svg,
+            .svg {
+              path {
+                fill: $white-hover;
+              }
+            }
+          }
+        }
+        &.active {
+          a {
+            svg,
+            .svg {
+              path {
+                //fill: #3cc796;
+                fill: $white;
+              }
+            }
+          }
+          &:hover {
+            a {
+              color: $white;
+            }
+          }
+          &>div.overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: #04794c;
+            top: 0;
+            left: 0;
+            opacity: 0.4;
+          }
+        }
+      }
+    }
+    .menu-item {
+      display: inline-block;
+    }
+  }
+  .to-portfolio {
+    //padding-bottom: 0;
+  }
+  .service-content {
+    //background-image: url('../img/services-bg-strip.png');
+    //background-position: center top;
+    //background-repeat: repeat-y;
+    .service-image {
+      //background-color: #d2f6d1;
+      padding: rem-calc(85 0 0);
+      @include breakpoint(medium down) {
+        padding: rem-calc(0);
+      }
+    }
+    .service-text {
+      background-color: #eceff0;
+      padding: rem-calc(85 0 130 115);
+      @include breakpoint(medium down) {
+        padding: rem-calc(15 10 40);
+      }
+    }
+  }
+  .service-portfolio-slideshow {
+    @include linear-gradient(to right, #069c95, #33ad50);
+    padding: rem-calc(90 0 105);
+    h1 {
+      color: $white;
+    }
+  }
+  .relatied {
+    @extend .blog-articles;
+    background-color: #002230;
+    padding-top: 0;//rem-calc(80);
+    @include breakpoint(medium down) {
+      padding-top: rem-calc(15);
+    }
+    h1 {
+      color: $white;
+      margin-bottom: rem-calc(24);
+    }
+    .row>.columns {
+      //margin-bottom: rem-calc(10);
+    }
+  }
+}
