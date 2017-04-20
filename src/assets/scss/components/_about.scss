@@ -1,0 +1,321 @@
+.AboutusPage {
+  .about-header {
+    padding: rem-calc(110 0 95);
+    background-image: url('../img/about-header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .logo {
+      margin-bottom: rem-calc(30);
+    }
+    @include breakpoint(medium down) {
+      padding: rem-calc(20 0 15);
+      svg, .svg {
+        max-width: 90%;
+        height: auto;
+      }
+    }
+  }
+  h1 {
+    font-size: rem-calc(48);
+    color: $black;
+    margin-top: rem-calc(100);
+    margin-bottom: rem-calc(50);
+    @include breakpoint(medium down) {
+      font-size: rem-calc(28);
+      margin-top: rem-calc(30);
+      margin-bottom: rem-calc(15);
+    }
+  }
+  p {
+    font-size: rem-calc(21);
+    color: #656565;
+    @include breakpoint(medium down) {
+      font-size: rem-calc(18);
+    }
+  }
+  section {
+    &.about-content {
+      padding-bottom: rem-calc(200);
+      background-image: url('../img/planex-ltd-partial-sign.svg');
+      background-position: center left;
+      background-repeat: no-repeat;
+      background-color: #ebebeb;
+      @include breakpoint(medium down) {
+        padding-bottom: rem-calc(50);
+      }
+    }
+    &.section3 {
+      padding: rem-calc(145 0 120);
+      background-image: url('../img/about-section3-bg.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: $white;
+      @include breakpoint(medium down) {
+        padding: rem-calc(20 0 15);
+      }
+      hr {
+        height: 4px;
+        background-color: $white;
+        @include breakpoint(medium down) {
+          height: 2px;
+        }
+      }
+      h1 {
+        color: $white;
+      }
+      p {
+        font-size: rem-calc(26);
+        color: $white;
+        @include breakpoint(medium down) {
+          font-size: rem-calc(18);
+        }
+      }
+    }
+    &.certificates {
+      background-color: #ffffff;
+      .owl-carousel {
+        margin-bottom: rem-calc(45);
+      }
+      .owl-item {
+        padding: 0.5rem;
+      }
+      .item-box {
+        height: rem-calc(330);
+        width: 100%;
+        border: 1px solid #bebebe;
+        position: relative;
+        background-color: #ffffff;
+        display: table;
+        &>a {
+          display: table-row;
+          .overlay {
+            position: absolute;
+            height: rem-calc(330);
+            width: 100%;
+            background-color: rgba(0, 34, 47, 0.77);
+            display: table;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 10;
+            .cert-info {
+              width: 100%;
+              height: 100%;
+              color: $white;
+              display: table-cell;
+              vertical-align: middle;
+              .cert-title {
+                font-size: rem-calc(26);
+              }
+            }
+          }
+          .certificate-image {
+            width: 100%;
+            height: 100%;
+            display: table-cell;
+            vertical-align: middle;
+          }
+          &:hover {
+            .overlay {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .short-portfolio {
+    background-color: #002230;
+    padding: rem-calc(0 0 45);
+    h1 {
+      color: $white;
+    }
+    p {
+      color: #9496a0;
+    }
+    .to-portfolio {
+      padding: rem-calc(60 0 40);
+      .button {
+        margin: rem-calc(0 0 20)
+      }
+    }
+    .offers-carousel {
+      margin: rem-calc(45) auto 0;
+    }
+    .owl-item {
+      padding: 0 0.55556rem;
+    }
+    .top-offer-object {
+      position: relative;
+      background-color: $white;
+      box-shadow: 0px 2px 3px rgba($black, 0.2);
+      &>div {
+        padding: 0 1rem;
+      }
+      .object-wrapper {
+        position: relative;
+        padding: 0;
+        margin-bottom: rem-calc(6);
+        overflow: hidden;
+        .object-image {
+          overflow: hidden;
+          position: relative;
+          height: 260px;
+          img {
+            position: absolute;
+            height: 260px;
+            max-width: inherit;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                    transform: translate(-50%,-50%);
+          }
+        }
+        .object-info {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          text-align: center;
+          color: $white;
+          padding: 3rem 0 0.75rem;
+          background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+          background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+          background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000', GradientType=0 );
+          -webkit-transition: all 0.33s ease 0.2s;
+          transition: all 0.33s ease 0.2s;
+          &.has-estates {
+            bottom: -80px;
+          }
+          h3 {
+            margin: 0;
+          }
+          hr {
+            margin: 5px auto;
+            width: 10%;
+          }
+          .place {
+            @include place-region-icon;
+          }
+          .region {
+            @include place-region-icon;
+          }
+        }
+      }
+      .estates-info {
+        //font-size: rem-calc(15);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $medium-gray;
+        .icon {
+          padding-top: 5px;
+          background-color: $white;
+          -webkit-transition: background-color 0.33s ease 0s, border-color 0.33s ease 0s;
+          transition: background-color 0.33s ease 0s, border-color 0.33s ease 0s;
+          .promo-text {
+            font-size: rem-calc(10);
+            color: $orange-color;
+            text-transform: uppercase;
+            white-space: nowrap;
+            position: relative;
+            top: -5px;
+            -webkit-transition: color 0.33s ease 0s;
+            transition: color 0.33s ease 0s;
+          }
+          svg {
+            width: 36px;
+            height: 36px;
+            path {
+              fill: $dark-gray;
+              -webkit-transition: fill 0.33s ease 0s;
+              transition: fill 0.33s ease 0s;
+            }
+          }
+        }
+        .estate-rzp,
+        .estate-complete-txt {
+          color: #858585;
+          font-family: 'hkgrotesk-light', Arial, sans-serif;
+          text-transform: none;
+        }
+        .estate-area,
+        .esate-completed {
+          color: $dark-gray;
+          font-family: 'hkgrotesk-bold', Arial, sans-serif;
+          text-transform: none;
+        }
+        &:hover {
+          .icon {
+            //background-color: $dark-gray;
+            //border-color: $white;
+            svg {
+              path {
+                fill: scale-color($dark-gray, $lightness: 60%)
+              }
+            }
+          }
+          .object-info {
+          }
+          .promo-text {
+            color: $white;
+          }
+        }
+        .view-gallery,
+        .view-offer {
+          font-size: rem-calc(13);
+          //text-transform: uppercase;
+          color: #069c95;
+          text-align: center;
+          display: block;
+          &:hover {
+            color: scale-color(#069c95, $lightness: 10%);
+          }
+        }
+      }
+      .show-all-top-estates {
+        text-align: center;
+        margin-top: rem-calc(16);
+        .button.gray {
+          color: $light-gray;
+          border-color: $light-gray;
+          &:hover {
+            color: $dark-gray;
+            background-color: $light-gray;
+          }
+        }
+      }
+      &:hover {
+        .object-info {
+          &.has-estates {
+            bottom: 0;
+            padding-top: 15rem;
+            -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.39,0.575,0.565,1), padding 0.4s cubic-bezier(0.39,0.575,0.565,1);
+            transition: bottom 0.4s cubic-bezier(0.39,0.575,0.565,1), padding 0.4s cubic-bezier(0.39,0.575,0.565,1);
+          }
+        }
+      }
+    }
+    .button {
+      &.alt {
+        margin-top: rem-calc(36);
+        margin-bottom: rem-calc(40);
+        padding-bottom: rem-calc(16);
+        border-bottom: 1px solid $white;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        &:hover {
+          padding-bottom: rem-calc(8);
+          margin-bottom: rem-calc(48);
+        }
+      }
+    }
+    .all-top-offers {
+      font-size: 1rem;
+      color: $white;
+      border-color: $white;
+      margin-top: rem-calc(60);
+    }
+  }
+}

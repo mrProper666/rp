@@ -1,0 +1,113 @@
+$fwhite: #ebebeb;
+footer {
+  .top{
+    background-color: #002e41;
+    padding: rem-calc(18 0 10);
+    //font-size: rem-calc(18);
+    color: $fwhite;
+    .menu {
+      .menu-item {
+        display: inline-block;
+        a {
+          font-size: rem-calc(14);
+          color: #779eae;
+          opacity: 0.5;
+          padding-left: 0;
+          text-decoration: none;
+          &:hover {
+            opacity: 1;
+            color: #779eae;
+          }
+        }
+      }
+    }
+    a {
+      &:not(.button) {
+        text-transform: none;
+        text-decoration: underline;
+        color: $fwhite;
+        &:hover {
+          color: scale-color($fwhite, $lightness: -30%);
+        }
+      }
+      &.button {
+        text-transform: uppercase;
+        color: #a4c3d0;
+        font-size: rem-calc(14);
+        &:hover {
+          color: $white;
+        }
+      }
+      &.iconized {
+        padding-top: rem-calc(3.5);
+        margin-left: rem-calc(15);
+        @include breakpoint(medium down) {
+          margin-left: rem-calc(0);
+        }
+        &>i {
+          margin-right: rem-calc(4);
+        }
+      }
+    }
+    p {
+      font-size: rem-calc(14);
+    }
+    h2 {
+      color: map-get($foundation-palette, primary);
+      padding: rem-calc(15 0 20);
+      font-size: rem-calc(18);
+    }
+    .city {
+      color: #49c1c4;
+    }
+    .addresses {
+      padding-bottom: rem-calc(32);
+    }
+    .share {
+      color: #779eae;
+      font-size: rem-calc(14);
+      margin-top: rem-calc(20);
+      &>div {
+        vertical-align: middle;
+        display: inline-block;
+        &:first-child {
+          vertical-align: inherit;
+        }
+      }
+    }
+  }
+  .hline-separator {
+    width: 100%;
+    background-color: #779eae;
+    opacity: 0.5;
+    margin-top: rem-calc(15);
+  }
+  .bottom {
+    background-color: #001b26;
+    font-size: rem-calc(12);
+    color: #767676;
+    padding: rem-calc(35 0 25);
+    .footer-logo {
+      display: block;
+      margin-bottom: rem-calc(15);
+    }
+    .copyright {
+      color: $fwhite;
+      margin-bottom: 0;
+      a {
+        color: $fwhite;
+      }
+    }
+    .madeby {
+      a {
+        color: #767676;
+      }
+    }
+    a:hover {
+      color: scale-color($fwhite, $lightness: -30%);
+    }
+  }
+  .worktime {
+    color: #779eae;
+  }
+}

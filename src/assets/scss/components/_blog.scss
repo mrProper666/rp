@@ -1,0 +1,87 @@
+.Blog {
+  .header {
+    @include linear-gradient(to right, #069c95, #33ad50);
+    .bg-wrapper{
+      padding: rem-calc(40 0 20);
+    }
+    .svg {
+      width: rem-calc(85);
+      height: rem-calc(68);
+      path {
+        fill: $white;
+      }
+    }
+    .title {
+      display: inline-block;
+    }
+    h1 {
+      color: $white;
+    }
+    hr {
+      margin-top: rem-calc(20);
+      margin-bottom: rem-calc(5);
+      height: 2px;
+      background-color: $white;
+      width: 100%;
+    }
+  }
+  .blog-articles {
+    background-color: #eceff0;
+    padding: rem-calc(30 0 90);
+    .title {
+      font-size: rem-calc(48);
+      margin-bottom: rem-calc(30);
+      @include breakpoint(medium down) {
+        font-size: rem-calc(28);
+        margin-bottom: rem-calc(15);
+      }
+    }
+    .select-category {
+      background-position-y: 50%;
+    }
+    .blog-article-object {
+      margin-bottom: rem-calc(30);
+    }
+  }
+}
+.BlogPost {
+  .header {
+    @include linear-gradient(to right, #069c95, #33ad50);
+    .bg-wrapper{
+      padding: rem-calc(40 0 40);
+      @include breakpoint(medium down) {
+        padding: rem-calc(20 0 15);
+      }
+    }
+    .title {
+      h1 {
+        color: $white;
+        font-size: rem-calc(48);
+        line-height: 1;
+        @include breakpoint(medium down) {
+          font-size: rem-calc(28);
+        }
+      }
+    }
+  }
+  .article {
+    .bg-wrapper {
+      @include linear-gradient(to right, #069c95, #33ad50);
+      padding: rem-calc(80 0 80);
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+    }
+    .content {
+      padding: rem-calc(50 0 80);
+      @include breakpoint(medium down) {
+        padding: rem-calc(20 0 50);
+      }
+      p {
+        color: #656565;
+        //font-size: rem-calc(21);
+        font-weight: 100;
+      }
+    }
+  }
+}

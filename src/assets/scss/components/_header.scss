@@ -1,0 +1,20 @@
+header {
+  background-color: $white;
+  border-bottom: 1px solid $medium-gray;
+  padding: rem-calc(16 0 16);
+  .top-header {
+    line-height: 1;
+  }
+  .menu {
+    li {
+      a {
+        font-size: rem-calc(18);
+        padding: rem-calc(10 18 10);
+        //color: $dark-gray;
+        &.top-offers {
+          color: $white;
+        }
+      }
+    }
+  }
+}

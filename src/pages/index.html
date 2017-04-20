@@ -1,453 +1,431 @@
 <div class="row expanded">
   <div class="large-12 columns">
-    <ul class="slideshow">
-      <li>
-        <div style="background: url(assets/img/slideshow-tmp.jpg) no-repeat center; background-size: cover; height: 570px; display: table-cell; vertical-align: middle; text-align: center;">
+    <div class="slideshow owl-carousel">
+      <div class="item">
+        {{!--<div style="background: url(assets/img/slideshow-tmp.jpg) no-repeat center; background-size: cover; height: 570px; display: table-cell; vertical-align: middle; text-align: center;">
           <img src="assets/img/slideshow-tmp.png" />
+        </div>--}}
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="assets/img/slideshow-tmp.jpg" media="(min-width: 1024px)">
+          <source srcset="assets/img/slideshow-tmp-medium.jpg" media="(min-width: 567px) and (max-width: 1023px)">
+          <source srcset="assets/img/slideshow-tmp-small.jpg" media="(max-width: 567px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="assets/img/slideshow-tmp.jpg" alt="...">
+        </picture>
+        <div class="slide-info-wrapper">
+          <div class="row">
+            <div class="small-12 medium-5 slide-info h-all-caps lite">
+              <h1>Живей в ГАМА</h1>
+              <hr/>
+              <p>ГАМА е модерна, функционална и изцяло съобразена с нуждите на активния градски човек.</p>
+            </div>
+          </div>
         </div>
-      </li>
-    </ul>
+      </div>
+      <div class="item">
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="assets/img/slideshow-tmp.jpg" media="(min-width: 1000px)">
+          <source srcset="assets/img/slideshow-tmp.jpg" media="(min-width: 800px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="assets/img/slideshow-tmp.jpg" alt="…">
+        </picture>
+        <div class="slide-info-wrapper">
+          <div class="row">
+            <div class="small-12 medium-5 slide-info h-all-caps lite">
+              <h1>Живей в ГАМА</h1>
+              <hr/>
+              <p>ГАМА е модерна, функционална и изцяло съобразена с нуждите на активния градски човек.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{!--<div class="owl-controls">
+        <div class="owl-dots"></div>
+        <div class="owl-nav">
+          <div class="owl-prev"><a href="#"><img class="svg" src="assets/img/prev-slideshow.svg"></a></div>
+          <div class="owl-next"><a href="#"><img class="svg" src="assets/img/next-slideshow.svg"></a></div>
+        </div>
+      </div>--}}
+    </div>
   </div>
 </div>
 
-<div class="section-wrapper">
-  <div class="section1-bg section-bg"></div>
-  <section class="search h-all-caps">
-    <div class="row">
-      <div class="small-12 columns">
-        <h1>Search realties</h1>
-        <div class="search-form">
-          <form>
-            <div class="row">
-              <div class="small-12 medium-10 columns">
-                <fieldset>
-                  <div class="row">
-                    <div class="small-6 medium-4 columns">
-                      <select>
-                        <option value="">City</option>
-                      </select>
-                      <select>
-                        <option value="">Region</option>
-                      </select>
-                    </div>
-                    <div class="small-6 medium-4 columns">
-                      <select>
-                        <option value="">Estate type</option>
-                      </select>
-                      <select>
-                        <option value="">Bedrooms</option>
-                      </select>
-                    </div>
-
-                    <div class="small-12 medium-4 columns">
-                      <div class="row">
-                        <div class="small-6 columns"><input type="text" name="price-from" placeholder="Price from" /></div>
-                        <div class="small-6 columns"><input type="text" name="price-to" placeholder="Price to" /></div>
-                      </div>
-                    </div>
-                    <div class="small-12 medium-4 columns">
-                      <div class="row">
-                        <div class="small-6 columns"><input type="text" name="area-from" placeholder="Area from" /></div>
-                        <div class="small-6 columns"><input type="text" name="area-to" placeholder="Area to" /></div>
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-              </div>
-              <div class="small-12 medium-2 columns text-center">
-                <div class="actions">
-                  <a href="#" class="button expanded">Search</a>
-                </div>
-                <div class="extended-search">
-                  <div class="">
-                    <a href="#">Extended search</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="small-12 columns">
-        <div class="quick-search-form">
-          <div class="row small-up-1 medium-up-5">
-            <div class="column"><a href="#" class="button hollow quick-search">Commercial</a></div>
-            <div class="column"><a href="#" class="button hollow quick-search">Residential</a></div>
-            <div class="column"><a href="#" class="button hollow quick-search">Holiday</a></div>
-            <div class="column"><a href="#" class="button hollow quick-search">Estates in Varna</a></div>
-            <div class="column"><a href="#" class="button hollow quick-search">Estates in Sofia</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="top-offers h-all-caps">
-    <div class="row">
-      <div class="small-12 columns">
-        <h1>Top offers</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="small-12 medium-4 columns">
-        <div class="top-offer-object">
-          <div class="object-wrapper">
-            <div class="object-image"><img src="assets/img/top-1-tmp.jpg" /></div> <!-- 380x260px -->
-            <div class="offer-category category1"><img class="svg" src="assets/img/project-category-residential.svg" /></div>
-            <div class="object-info">
-              <h3 class="name lite">Aquarelle 3</h3>
-              <hr/>
-              <span class="place">
-                <img class="svg" src="assets/img/pin.svg" />
-                Varna
-              </span>
-              <span class="region">
-                <img class="svg" src="assets/img/pin-region.svg" />
-                Briz
-              </span>
-              <div class="show-all-top-estates">
-                <a href="#" class="button hollow gray">Show all from this object</a>
-              </div>
-            </div>
-          </div>
-          <div class="estates-info">
-            <a href="#" title="Top price">
-            <div class="row">
-              <div class="small-6 medium-3 columns">
-                <div class="icon">
-                  <img src="assets/img/estate-promo-extraprice.svg" class="svg" />
-                  <!--<span class="promo-text">Top price</span>-->
-                </div>
-              </div>
-              <div class="small-6 medium-4 columns">
-                <div class="old-price price">97950 &euro;</div>
-                <div class="new-price price">93000 &euro;</div>
-              </div>
-              <div class="small-12 medium-5 columns">
-                <div class="estate-type">
-                  <img src="assets/img/icon-apartament.svg" class="svg" />
-                  Apartment
-                </div>
-                <div class="estate-area">
-                  <img src="assets/img/icon-area.svg" class="svg" />
-                  119sq.m
-                </div>
-              </div>
-            </div>
-            </a>
-          </div>
-          <div class="estates-info">
-            <a href="#" title="Parkplace">
-            <div class="row">
-              <div class="small-6 medium-3 columns">
-                <div class="icon">
-                  <img src="assets/img/estate-promo-parkplace.svg" class="svg" />
-                  <!--<span class="promo-text">Parkplace</span>-->
-                </div>
-              </div>
-              <div class="small-6 medium-4 columns">
-                <div class="price">97950 &euro;</div>
-              </div>
-              <div class="small-12 medium-5 columns">
-                <div class="estate-type">
-                  <img src="assets/img/icon-apartament.svg" class="svg" />
-                  Apartment
-                </div>
-                <div class="estate-area">
-                  <img src="assets/img/icon-area.svg" class="svg" />
-                  119sq.m
-                </div>
-              </div>
-            </div>
-            </a>
-          </div>
-          <!--<div class="show-all-top-estates">
-            <a href="#" class="button">Show all from this object</a>
-          </div>-->
-        </div>
-      </div>
-      <div class="small-12 medium-4 columns">
-        <div class="top-offer-object">
-          <div class="object-wrapper">
-            <div class="object-image"><img src="assets/img/top-2-tmp.jpg" /></div>
-            <div class="offer-category category1"><img class="svg" src="assets/img/project-category-business.svg" /></div>
-            <div class="object-info">
-              <h3 class="name lite">Viva 3 - 2nd stage</h3>
-              <hr/>
-              <span class="place">
-                <img class="svg" src="assets/img/pin.svg" />
-                Varna
-              </span>
-              <span class="region">
-                <img class="svg" src="assets/img/pin-region.svg" />
-                Levski
-              </span>
-              <div class="show-all-top-estates">
-                <a href="#" class="button hollow gray">Show all from this object</a>
-              </div>
-            </div>
-          </div>
-          <div class="estates-info">
-            <a href="#" title="Top price">
-            <div class="row">
-              <div class="small-6 medium-3 columns">
-                <div class="icon">
-                  <img src="assets/img/estate-promo-extraprice.svg" class="svg" />
-                  <!--<span class="promo-text">Top price</span>-->
-                </div>
-              </div>
-              <div class="small-6 medium-4 columns">
-                <div class="old-price price">97950 &euro;</div>
-                <div class="new-price price">93000 &euro;</div>
-              </div>
-              <div class="small-12 medium-5 columns">
-                <div class="estate-type">
-                  <img src="assets/img/icon-apartament.svg" class="svg" />
-                  Apartment
-                </div>
-                <div class="estate-area">
-                  <img src="assets/img/icon-area.svg" class="svg" />
-                  119sq.m
-                </div>
-              </div>
-            </div>
-            </a>
-          </div>
-          <div class="estates-info">
-            <a href="#" title="Top price">
-            <div class="row">
-              <div class="small-6 medium-3 columns">
-                <div class="icon">
-                  <img src="assets/img/estate-promo-extraprice.svg" class="svg" />
-                  <!--<span class="promo-text">Top price</span>-->
-                </div>
-              </div>
-              <div class="small-6 medium-4 columns">
-                <div class="old-price price">97950 &euro;</div>
-                <div class="new-price price">93000 &euro;</div>
-              </div>
-              <div class="small-12 medium-5 columns">
-                <div class="estate-type">
-                  <img src="assets/img/icon-apartament.svg" class="svg" />
-                  Apartment
-                </div>
-                <div class="estate-area">
-                  <img src="assets/img/icon-area.svg" class="svg" />
-                  119sq.m
-                </div>
-              </div>
-            </div>
-            </a>
-          </div>
-          <!--<div class="show-all-top-estates">
-            <a href="#" class="button">Show all from this object</a>
-          </div>-->
-        </div>
-      </div>
-      <div class="small-12 medium-4 columns">
-        <div class="top-offer-object">
-          <div class="object-wrapper">
-            <div class="object-image"><img src="assets/img/top-3-tmp.jpg" /></div>
-            <div class="offer-category category2"><img class="svg" src="assets/img/project-category-holiday.svg" /></div>
-            <div class="object-info">
-              <h3 class="name lite">Aquarelle 2</h3>
-              <hr/>
-              <span class="place">
-                <img class="svg" src="assets/img/pin.svg" />
-                Varna
-              </span>
-              <span class="region">
-                <img class="svg" src="assets/img/pin-region.svg" />
-                Briz
-              </span>
-              <div class="show-all-top-estates">
-                <a href="#" class="button hollow gray">Show all from this object</a>
-              </div>
-            </div>
-          </div>
-          <div class="estates-info">
-            <a href="#" title="Top price">
-            <div class="row">
-              <div class="small-6 medium-3 columns">
-                <div class="icon">
-                  <img src="assets/img/estate-promo-extraprice.svg" class="svg" />
-                  <!--<span class="promo-text">Top price</span>-->
-                </div>
-              </div>
-              <div class="small-6 medium-4 columns">
-                <div class="old-price price">97950 &euro;</div>
-                <div class="new-price price">93000 &euro;</div>
-              </div>
-              <div class="small-12 medium-5 columns">
-                <div class="estate-type">
-                  <img src="assets/img/icon-apartament.svg" class="svg" />
-                  Apartment
-                </div>
-                <div class="estate-area">
-                  <img src="assets/img/icon-area.svg" class="svg" />
-                  119sq.m
-                </div>
-              </div>
-            </div>
-            </a>
-          </div>
-          <div class="estates-info">
-            <a href="#" title="Top price">
-            <div class="row">
-              <div class="small-6 medium-3 columns">
-                <div class="icon">
-                  <img src="assets/img/estate-promo-extraprice.svg" class="svg" />
-                  <!--<span class="promo-text">Top price</span>-->
-                </div>
-              </div>
-              <div class="small-6 medium-4 columns">
-                <div class="old-price price">97950 &euro;</div>
-                <div class="new-price price">93000 &euro;</div>
-              </div>
-              <div class="small-12 medium-5 columns">
-                <div class="estate-type">
-                  <img src="assets/img/icon-apartament.svg" class="svg" />
-                  Apartment
-                </div>
-                <div class="estate-area">
-                  <img src="assets/img/icon-area.svg" class="svg" />
-                  119sq.m
-                </div>
-              </div>
-            </div>
-            </a>
-          </div>
-          <!--<div class="show-all-top-estates">
-            <a href="#" class="button">Show all from this object</a>
-          </div>-->
-        </div>
-      </div>
-    </div>
-    <div class="row text-center">
-      <div class="small-12 columns">
-        <a href="#" class="button alt">Show all top offers</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="row contact-us-cta text-center h-all-caps">
+<section class="search h-all-caps lite">
+  <div class="row">
     <div class="small-12 columns">
-      <h1>Contact us</h1>
-      <a href="#" class="button">Send us a feedback</a>
-      <p>Or simply call us at</p>
-      <h2>052 600 936</h2>
-    </div>
-  </section>
-</div>
+      <h4 class="text-center">Ние сме Планекс и създаваме сгради, които печелят многобройни награди. Запознайте се с нашите оферти за закупуване на висококачествен имот директно от инвеститора.</h4>
+      <hr class="hline-separator" />
+      <h1 class="text-center">Намерете вашия имот</h1>
+      <div class="search-form">
+        <form class="light">
+          <fieldset>
+            <div class="row callout">
+              <div class="small-12 large-10 columns">
+                <div class="row">
+                  <div class="collapsable">
+                    <div class="small-12 medium-6 large-4 columns">
+                      <div class="input-box">
+                        <label for="city-search">Локация</label>
+                        <div class="select-div">
+                          <select id="city-search">
+                            <option value="">всички</option>
+                            <option value="">Варна</option>
+                            <option value="">София</option>
+                            <option value="">Бургас</option>
+                            <option value="">Св.Св Константин и Елена</option>
+                          </select>
+                          <!--<img class="svg" src="/assets/img/select-drop-icon.svg" alt="select-icon" />-->
+                        </div>
+                      </div>
+                      <div class="input-box">
+                        <label for="region-search">Регион</label>
+                        <div class="select-div">
+                          <select id="region-search">
+                            <option value="">всички</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="small-12 medium-6 large-4 columns">
+                      <div class="input-box">
+                        <label for="estate-type-search">Тип на имота</label>
+                        <div class="select-div">
+                          <select id="estate-type-search">
+                            <option value="">всички</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="input-box">
+                        <label for="bedrooms-search">Брой спални</label>
+                        <div class="select-div">
+                          <select id="bedrooms-search">
+                            <option value="">всички</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
 
-<section class="row expanded categories">
+                    <div class="small-12 medium-6 large-4 columns">
+                      <div class="row">
+                        <div class="small-6 medium-6 columns">
+                          <div class="input-box">
+                            <label for="price-from">Цена от</label>
+                            <input class="input-text" id="price-from" type="text" name="price-from" placeholder="сума &euro;" />
+                          </div>
+                        </div>
+                        <div class="small-6 medium-6 columns">
+                          <div class="input-box">
+                            <label for="price-to">Цена до</label>
+                            <input class="input-text" id="price-to" type="text" name="price-to" placeholder="сума &euro;" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="small-12 medium-6 large-4 columns">
+                      <div class="row">
+                        <div class="small-6 medium-6 columns">
+                          <div class="input-box">
+                            <label for="area-from">Площ от</label>
+                            <input class="input-text" id="area-from" type="text" name="area-from" placeholder="кв.м" />
+                          </div>
+                        </div>
+                        <div class="small-6 medium-6 columns">
+                          <div class="input-box">
+                            <label for="area-to">Площ до</label>
+                            <input class="input-text" id="area-to" type="text" name="area-to" placeholder="кв.м" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="small-12 large-2 columns text-center">
+                <div class="actions">
+                  <a href="search.html" class="button expanded">Търси</a>
+                </div>
+        <div class="collapse-search hide-for-small-only">
+          <div class="">
+            <a href="#">Разширено търсене</a>
+          </div>
+        </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns">
+      <div class="quick-search-form">
+        <div class="row small-up-1 medium-up-3 large-up-5">
+          <div class="column"><a href="#" class="button hollow quick-search">Бизнес</a></div>
+          <div class="column"><a href="#" class="button hollow quick-search">Жилищни</a></div>
+          <div class="column"><a href="#" class="button hollow quick-search">Ваканционни</a></div>
+          <div class="column"><a href="#" class="button hollow quick-search">Имоти във Варна</a></div>
+          <div class="column"><a href="#" class="button hollow quick-search">Имоти в София</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="top-offers h-all-caps lite">
+  <div class="row">
+    <div class="small-12 columns">
+      <h1 class="text-center">Топ оферти</h1>
+    </div>
+  </div>
+  <div class="row offers-carousel owl-carousel">
+    
+    <div class="top-offer-object">
+      <div class="object-wrapper">
+        <div class="object-image"><img src="assets/img/top-1-tmp.jpg" /></div> <!-- 380x260px -->
+        <div class="object-info">
+          <h3 class="name lite">Акварел 3</h3>
+          <span class="place">
+            Варна, Бриз
+          </span>
+          <div class="show-all-top-estates">
+            <a href="object-general.html" class="button hollow inverted gray">Всички Топ оферти в обекта</a>
+          </div>
+        </div>
+      </div>
+      <div class="estates-info">
+        <div class="row">
+          <div class="small-6 columns">
+            <div class="estate-type">Апартамент</div>
+            <div class="estate-area">119 кв.м.</div>
+          </div>
+          <div class="small-6 columns text-right">
+            <div class="old-price price">97950 &euro;</div>
+            <div class="new-price price">93000 &euro;</div>
+          </div>
+        </div>
+        <hr/>
+        <div class="row text-center">
+          <div class="small-12 columns promotion-icons">
+            <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="1" title="tooltip"><img src="assets/img/Finishingworks.svg" alt="" /></span>
+          </div>
+        </div>
+        <hr/>
+        <a href="property-general.html" title="Виж офертата" class="view-offer">Виж офертата</a>
+      </div>
+    </div>
+  
+    <div class="top-offer-object">
+      <div class="object-wrapper">
+        <div class="object-image"><img src="assets/img/top-2-tmp.jpg" /></div> <!-- 380x260px -->
+        <div class="object-info">
+          <h3 class="name lite">Вива 3 - 2ри етап</h3>
+          <span class="place">
+            Варна, Левски
+          </span>
+          <div class="show-all-top-estates">
+            <a href="object-general.html" class="button hollow gray">Всички Топ оферти в обекта</a>
+          </div>
+        </div>
+      </div>
+      <div class="estates-info">
+        <div class="row">
+          <div class="small-6 columns">
+            <div class="estate-type">Апартамент</div>
+            <div class="estate-area">119 кв.м.</div>
+          </div>
+          <div class="small-6 columns text-right">
+            <div class="old-price price">97950 &euro;</div>
+            <div class="new-price price">93000 &euro;</div>
+          </div>
+        </div>
+        <hr/>
+        <a href="property-general.html" title="Виж офертата" class="view-offer">Виж офертата</a>
+      </div>
+    </div>
+  
+    <div class="top-offer-object">
+      <div class="object-wrapper">
+        <div class="object-image"><img src="assets/img/top-3-tmp.jpg" /></div> <!-- 380x260px -->
+        <div class="object-info">
+          <h3 class="name lite">Акварел 2</h3>
+          <span class="place">
+            Варна, Бриз
+          </span>
+          <div class="show-all-top-estates">
+            <a href="object-general.html" class="button hollow gray">Всички Топ оферти в обекта</a>
+          </div>
+        </div>
+      </div>
+      <div class="estates-info">
+        <div class="row">
+          <div class="small-6 columns">
+            <div class="estate-type">Апартамент</div>
+            <div class="estate-area">119 кв.м.</div>
+          </div>
+          <div class="small-6 columns text-right">
+            <div class="old-price price">97950 &euro;</div>
+            <div class="new-price price">93000 &euro;</div>
+          </div>
+        </div>
+        <hr/>
+        <a href="property-general.html" title="Виж офертата" class="view-offer">Виж офертата</a>
+      </div>
+    </div>
+    
+  </div>
+  <div class="row text-center">
+    <div class="small-12 columns">
+      <a href="#" class="button hollow inverted all-top-offers">Всички топ оферти</a>
+    </div>
+  </div>
+</section>
+
+<section class="row expanded portfolio text-center h-all-caps lite">
+  <div class="small-12 columns">
+    <div class="row">
+      <div class="small-12 medium-4 columns">
+        <h1 class="text-center">над 25</h1>
+        <p>години опит</p>
+      </div>
+      <div class="small-12 medium-4 columns">
+        <h1 class="text-center">над 1 250 000</h1>
+        <p>кв.м реализирани проекти</p>
+      </div>
+      <div class="small-12 medium-4 columns">
+        <h1 class="text-center">над 1 500</h1>
+        <p>индивидуални имота</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
+          <a href="#" class="button hollow">Портфолио на Планекс</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="row categories h-all-caps lite hide-for-small-only">
   <div class="small-12 medium-4 columns tile category1">
-    <a href="#" class="tile_item">
-      <span class="cover"><div class="cover-bg-image bg-image-overlay" style="background-image: url(assets/img/category2.jpg);"></div></span>
+    <a href="residential.html" class="tile_item">
+      <span class="cover"><div class="cover-bg-image bg-image-overlay" style="background-image: url(assets/img/category1.jpg);"></div></span>
       <span class="category-icon">
-        <img class="svg" src="assets/img/project-category-business.svg" />
-        <h4>Business estates</h4>
+        <img class="svg" src="assets/img/project-category-residential.svg" />
+        <h4>За Вас и семейството Ви</h4>
       </span>
     </a>
   </div>
   <div class="small-12 medium-4 columns tile category2">
-    <a href="#" class="tile_item">
-      <span class="cover"><div class="cover-bg-image bg-image-overlay" style="background-image: url(assets/img/category1.jpg);"></div></span>
+    <a href="business.html" class="tile_item">
+      <span class="cover"><div class="cover-bg-image bg-image-overlay" style="background-image: url(assets/img/category2.jpg);"></div></span>
       <span class="category-icon">
-        <img class="svg" src="assets/img/project-category-residential.svg" />
-        <h4>Residential estates</h4>
+        <img class="svg" src="assets/img/project-category-business.svg" />
+        <h4>За Вашия бизнес</h4>
       </span>
     </a>
   </div>
   <div class="small-12 medium-4 columns tile category3">
-    <a href="#" class="tile_item">
+    <a href="holiday.html" class="tile_item">
       <span class="cover"><div class="cover-bg-image bg-image-overlay" style="background-image: url(assets/img/category3.jpg);"></div></span>
       <span class="category-icon">
         <img class="svg" src="assets/img/project-category-holiday.svg" />
-        <h4>Holiday estates</h4>
+        <h4>За Вашата почивка</h4>
       </span>
     </a>
   </div>
 </section>
 
-<div class="section-wrapper">
-  <div class="section2-bg section-bg"></div>
-  <section class="actual-offers h-all-caps">
-    <div class="row">
-      <div class="small-12 columns">
-        <h1>Actual</h1>
+<section class="quick-contact text-center h-all-caps lite">
+  <div class="row expanded">
+    <div class="small-12 medium-6 medium-push-3 columns">
+      <div class="callout hollow">
+        <h2>Нека обсъдим вашият нов имот</h2>
+        <hr class="hline-separator" />
+        <p>Ние ще ви помогнем да намерите най-добрият жилищен, бизнес или ваканционен имот.</p>
+        <a href="contact.html" class="button">Свържете се с нас</a>
       </div>
     </div>
-    <div class="row">
-      <div class="small-12 medium-4 columns">
-        <div class="actual-offer-object">
-          <img src="assets/img/news-tmp.jpg" />
-          <div class="">
-            <p>Offer 1 heading</p>
-            <a href="#" class="button">Go</a>
-          </div>
-        </div>
-      </div>
-      <div class="small-12 medium-4 columns">
-        <div class="actual-offer-object">
-          <img src="assets/img/news-tmp.jpg" />
-          <div class="">
-            <p>Offer 1 heading</p>
-            <a href="#" class="button">Go</a>
-          </div>
-        </div>
-      </div>
-      <div class="small-12 medium-4 columns">
-        <div class="actual-offer-object">
-          <img src="assets/img/news-tmp.jpg" />
-          <div class="">
-            <p>Offer 1 heading</p>
-            <a href="#" class="button">Go</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row text-center">
-      <div class="small-12 columns">
-        <a href="#" class="button show-all">Show all news</a>
-        <hr style="width:6em;border-color:white;" />
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <section class="feedback h-all-caps">
-    <div class="row text-center">
-      <div class="small-12 columns">
-        <h1>Subscribe for our newsletter</h1>
-        <p>Няма да засипем пощата ви с ненужни имейли.<br/>Изпращаме само информация за най-горещите оферти и събития!</p>
-        <form id="subscribe-form">
-          <div class="row">
-            <div class="small-12 medium-6 medium-push-3 columns">
-              <div class="input-group">
-                <input class="input-group-field" type="email" name="email" placeholder="Type in your Email" />
-                <div class="input-group-button">
-                  <button class="button">Subscribe</button>
-                </div>
+<section class="blog-articles h-all-caps lite">
+  <div class="row">
+    <div class="small-12 columns">
+      <h1 class="text-center">Блог</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 medium-4 columns">
+      <div class="blog-article-object">
+        <div class="article-image"><a href="blog-article.html"><img src="assets/img/news-tmp.jpg" /></a></div>
+        <div class="article-title">
+          <a href="blog-article.html">Статия 1 заглавие</a>
+        </div>
+        <div class="article-date">юни 2016</div>
+        <!--<div class="article-category article-category1">Категория</div>-->
+      </div>
+    </div>
+    <div class="small-12 medium-4 columns">
+      <div class="blog-article-object">
+        <div class="article-image"><a href="blog-article.html"><img src="assets/img/news-tmp2.jpg" /></a></div>
+        <div class="article-title">
+          <a href="blog-article.html">Статия 2 заглавие</a>
+        </div>
+        <div class="article-date">юни 2016</div>
+        <!--<div class="article-category article-category1">Категория</div>-->
+      </div>
+    </div>
+    <div class="small-12 medium-4 columns">
+      <div class="blog-article-object">
+        <div class="article-image"><a href="blog-article.html"><img src="assets/img/news-tmp.jpg" /></a></div>
+        <div class="article-title">
+          <a href="blog-article.html">Статия 3 заглавие</a>
+        </div>
+        <div class="article-date">юни 2016</div>
+        <!--<div class="article-category article-category1">Категория</div>-->
+      </div>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="small-12 columns">
+      <a href="blog.html" class="button show-all">Всички статии</a>
+    </div>
+  </div>
+</section>
+
+{{!--
+<section class="feedback h-all-caps lite">
+  <div class="row text-center">
+    <div class="small-12 columns">
+      <h1 class="text-center">Subscribe for our newsletter</h1>
+      <p>Няма да засипем пощата ви с ненужни имейли.<br/>Изпращаме само информация за най-горещите оферти и събития!</p>
+      <form id="subscribe-form">
+        <div class="row">
+          <div class="small-12 medium-6 medium-push-3 columns">
+            <div class="input-group">
+              <input class="input-group-field" type="email" name="email" placeholder="Type in your Email" />
+              <div class="input-group-button">
+                <button class="button">Subscribe</button>
               </div>
             </div>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
-  </section>
+  </div>
+</section>
+--}}
 
-  <section class="share text-center">
-    <hr style="width:6em;border-color:white;" />
-    <div class="links">
-      <a href="#"><img class="svg" src="assets/img/icon-twitter.svg" /></a>
-      <a href="#"><img class="svg" src="assets/img/icon-linkedin.svg" /></a>
-      <a href="#"><img class="svg" src="assets/img/icon-youtube.svg" /></a>
-    </div>
-    <hr style="width:6em;border-color:white;" />
-  </section>
+{{!--
+<section class="share text-center">
+  <hr style="width:6em;border-color:white;" />
+  <div class="links">
+    <a href="#"><img class="svg" src="assets/img/icon-twitter.svg" /></a>
+    <a href="#"><img class="svg" src="assets/img/icon-linkedin.svg" /></a>
+    <a href="#"><img class="svg" src="assets/img/icon-youtube.svg" /></a>
+  </div>
+  <hr style="width:6em;border-color:white;" />
+</section>
+--}}
 
-  {{> footer}}
-  
-</div>

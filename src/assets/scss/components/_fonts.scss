@@ -1,0 +1,48 @@
+//@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic);
+//@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,cyrillic);
+//@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500,700&subset=cyrillic);
+
+@font-face {
+    font-family: 'hkgrotesk-regular';
+    src: url('../webfonts/hkgrotesk-regular-web.eot');
+    src: url('../webfonts/hkgrotesk-regular-web.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/hkgrotesk-regular-web.woff2') format('woff2'),
+         url('../webfonts/hkgrotesk-regular-web.woff') format('woff'),
+         url('../webfonts/hkgrotesk-regular-web.ttf') format('truetype'),
+         url('../webfonts/hkgrotesk-regular-web.svg#hkgrotesk-regular-web') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hkgrotesk-medium';
+    src: url('../webfonts/hkgrotesk-medium-web.eot');
+    src: url('../webfonts/hkgrotesk-medium-web.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/hkgrotesk-medium-web.woff2') format('woff2'),
+         url('../webfonts/hkgrotesk-medium-web.woff') format('woff'),
+         url('../webfonts/hkgrotesk-medium-web.ttf') format('truetype'),
+         url('../webfonts/hkgrotesk-medium-web.svg#hkgrotesk-medium-web') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hkgrotesk-light';
+    src: url('../webfonts/hkgrotesk-light-web.eot');
+    src: url('../webfonts/hkgrotesk-light-web.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/hkgrotesk-light-web.woff2') format('woff2'),
+         url('../webfonts/hkgrotesk-light-web.woff') format('woff'),
+         url('../webfonts/hkgrotesk-light-web.ttf') format('truetype'),
+         url('../webfonts/hkgrotesk-light-web.svg#hkgrotesk-light-web') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hkgrotesk-bold';
+    src: url('../webfonts/hkgrotesk-bold-web.eot');
+    src: url('../webfonts/hkgrotesk-bold-web.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/hkgrotesk-bold-web.woff2') format('woff2'),
+         url('../webfonts/hkgrotesk-bold-web.woff') format('woff'),
+         url('../webfonts/hkgrotesk-bold-web.ttf') format('truetype'),
+         url('../webfonts/hkgrotesk-bold-web.svg#hkgrotesk-bold-web') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

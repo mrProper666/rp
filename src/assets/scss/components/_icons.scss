@@ -1,0 +1,66 @@
+i {
+  &.phone {
+    .svg,
+    svg {
+      width: 18px;
+      height: 18px;
+      path {
+        fill: $white;
+      }
+    }
+  }
+  &.heart {
+    .svg,
+    svg {
+      width: 18px;
+      height: 18px;
+      path {
+        fill: #09bb82;
+      }
+    }
+  }
+  &.top-search {
+    .svg,
+    svg {
+      path {
+        fill: #9496a0;
+      }
+    }
+  }
+  &.ico-mail {
+    .svg,
+    svg {
+      width: 33px;
+      height: 20px;
+      transform: translate(-3px,4px);
+      path {
+        fill: #325d6f;
+      }
+    }
+  }
+  &.share-fb {
+    .svg,
+    svg {
+      width: 32px;
+      height: 32px;
+      path {
+        fill: #325d6f;
+      }
+    }
+  }
+  &.share-yt {
+    .svg,
+    svg {
+      width: 40px;
+      height: 32px;
+      path {
+        fill: #325d6f;
+      }
+    }
+  }
+}
+.top-bar {
+  i {
+    //position: absolute;
+  }
+}

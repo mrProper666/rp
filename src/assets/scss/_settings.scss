@@ -42,18 +42,14 @@
 
 @import 'util/util';
 
-//@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic);
-//@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500,700&subset=cyrillic);
-
 // 1. Global
 // ---------
 
-$global-font-size: 100%;
+$global-font-size: rem-calc(18);//100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #2cd9a6,//#2199e8,
+  primary: #09bb82,//#2199e8,
   secondary: #777,
   success: #3adb76,
   warning: #ffae00,
@@ -61,19 +57,20 @@ $foundation-palette: (
 );
 $light-gray: #ebebeb;
 $medium-gray: #cacaca;
-$dark-gray: #434343;
+$dark-gray: #404040;
 $black: #0a0a0a;
-$white: #fefefe;
+$white: #f7f7f7;//#fefefe;
+$white-hover: scale-color(#33ad50, $lightness: 50%);
 $red-color: #e5252e;
 $orange-color: #f58220;//#ee5926
-$body-background: $light-gray;
-$body-font-color: $black;
-$body-font-family: Roboto, Arial, sans-serif;
+$body-background: #e8eef0;//$light-gray;
+$body-font-color: #5e5e5e;//$black;
+$body-font-family: 'hkgrotesk-regular', Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
-$global-weight-normal: 400;
-$global-weight-bold: 700;
+$global-weight-normal: normal;
+$global-weight-bold: normal;
 $global-radius: 0;
 $global-text-direction: ltr;
 $global-flexbox: false;
@@ -86,12 +83,13 @@ $print-transparent-backgrounds: true;
 
 $breakpoints: (
   small: 0,
+  iphone5: 569px,
   medium: 640px,
   large: 1024px,
   xlarge: 1200px,
   xxlarge: 1440px,
 );
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small iphone5 medium large);
 
 // 3. The Grid
 // -----------
@@ -108,7 +106,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: 'Roboto Slab', serif;
+$header-font-family: 'hkgrotesk-bold', Arial, sans-serif;
 $header-font-weight: $global-weight-bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -131,7 +129,7 @@ $header-sizes: (
   ),
 );
 $header-color: inherit;
-$header-lineheight: 1.4;
+$header-lineheight: 1.2;
 $header-margin-bottom: 0.5rem;
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
@@ -145,7 +143,7 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $black;
+$anchor-color: #5e5e5e;//$black;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
@@ -273,7 +271,7 @@ $callout-margin: 0 0 1rem 0;
 $callout-padding: 1rem;
 $callout-font-color: $body-font-color;
 $callout-font-color-alt: $body-background;
-$callout-radius: $global-radius;
+$callout-radius: 3px;//$global-radius;
 $callout-link-tint: 30%;
 
 // 14. Close Button
@@ -316,7 +314,7 @@ $dropdownmenu-arrows: true;
 $dropdownmenu-arrow-color: $anchor-color;
 $dropdownmenu-min-width: 200px;
 $dropdownmenu-background: $white;
-$dropdownmenu-border: 1px solid $medium-gray;
+$dropdownmenu-border: 1px solid $dark-gray;
 
 // 18. Flex Video
 // --------------
@@ -348,7 +346,7 @@ $select-background: $white;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
 $input-color: $black;
-$input-placeholder-color: $dark-gray;
+$input-placeholder-color: #8c7c7c;//$dark-gray;
 $input-font-family: inherit;
 $input-font-size: rem-calc(16);
 $input-background: $white;
@@ -552,12 +550,12 @@ $titlebar-icon-spacing: 0.25rem;
 // -----------
 
 $has-tip-font-weight: $global-weight-bold;
-$has-tip-border-bottom: dotted 1px $dark-gray;
+$has-tip-border-bottom: none;//dotted 1px $dark-gray;
 $tooltip-background-color: $black;
 $tooltip-color: $white;
-$tooltip-padding: 0.75rem;
+$tooltip-padding: 0.5rem;
 $tooltip-font-size: $small-font-size;
-$tooltip-pip-width: 0.75rem;
+$tooltip-pip-width: 0.5rem;
 $tooltip-pip-height: $tooltip-pip-width * 0.866;
 $tooltip-radius: $global-radius;
 

@@ -1,0 +1,652 @@
+.Project,
+.ObjectPage,
+.RealEstate {
+  .object-header {
+    margin: rem-calc(20 0 10);
+    .header-box {
+      background-color: $white;
+      width: 100%;
+      margin-left: rem-calc(15);
+      margin-right: rem-calc(15);
+      box-shadow: 0 1px 2px rgba($dark-gray, 0.3);
+      @include breakpoint(medium down) {
+        margin-left: rem-calc(10);
+        margin-right: rem-calc(10);
+      }
+      .text-info {
+        padding: rem-calc(40 15 30);
+        position: relative;
+        @include breakpoint(medium down) {
+          padding: rem-calc(20 10 10);
+        }
+      }
+      .object-image {
+        padding-right: 0;
+        max-height: 375px;
+        overflow: hidden;
+        @include breakpoint(medium down) {
+          padding-left: 0;
+        }
+      }
+      h1 {
+        font-size: rem-calc(34);
+        color: black;
+        @include breakpoint(medium down) {
+          font-size: rem-calc(26);
+          line-height: 1.2;
+        }
+      }
+      address {
+        font-size: rem-calc(16);
+        color: $medium-gray;
+        font-style: normal;
+      }
+      .cta {
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        right: 0;
+        @include breakpoint(medium down) {
+          position: static;
+          margin-top: rem-calc(15);
+        }
+      }
+    }
+  }
+  .submenu {
+    .cta-accent {
+      color: $primary-color;
+    }
+    .menu-wrapper {
+      background-color: $white;
+      box-shadow: 0 1px 2px rgba($dark-gray, 0.3);
+      margin-bottom: rem-calc(30);
+      .menu {
+        li {
+          a {
+            font-size: rem-calc(16);
+            border-bottom: 3px solid transparent;
+            padding-top: rem-calc(27);
+            padding-bottom: rem-calc(27);
+            @include breakpoint(medium down) {
+              padding-top: rem-calc(12);
+              padding-bottom: rem-calc(12);
+            }
+            &:hover {
+              color: $primary-color;
+            }
+          }
+          &.active {
+            a {
+              color: inherit;
+              border-bottom-color: $primary-color;
+            }
+            .cta-accent {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+      &.mobile {
+        li {
+          a {
+            white-space: nowrap;
+            padding-top: rem-calc(12);
+            padding-bottom: rem-calc(12);
+          }
+        }
+      }
+    }
+  }
+}
+.Project,
+.RealEstate,
+.ObjectPage {
+  .search.info-tabs,
+  .info-tabs {
+    padding: rem-calc(30 0 170);
+    @include breakpoint(medium down) {
+      padding-top: rem-calc(0);
+      padding-bottom: rem-calc(80);
+    }
+    h2 {
+      font-size: rem-calc(30);
+      color: black;
+    }
+    address {
+      font-size: rem-calc(16);
+      color: scale-color($medium-gray, $lightness: -20%);
+      font-style: normal;
+    }
+    .object-info {
+      ul {
+        list-style: none;
+        margin-top: rem-calc(30);
+        font-size: rem-calc(16);
+        margin-left: 0;
+        color: black;
+      }
+      .general {
+        ul {
+          li {
+            border-bottom: 1px solid $medium-gray;
+            padding: rem-calc(10 0);
+            &:last-child {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+      .amenities {
+        margin-top: rem-calc(60);
+        ul {
+          li {
+            padding: rem-calc(10 0);
+            span {
+              display: inline-block;
+              width: 80%;
+              vertical-align: middle;
+              line-height: 1.2;
+              &.icon {
+                width: 40px;
+                margin-right: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .table-header-estates {
+    header {
+      @include linear-gradient(to right, #069c95 40%, #33ad50 80%);
+      padding: rem-calc(30 30);
+      @include breakpoint(medium down) {
+        padding: rem-calc(10 15);
+      }
+      h2 {
+        color: $white;
+        display: inline-block;
+        @include breakpoint(medium down) {
+          font-size: rem-calc(20);
+        }
+      }
+      .filters {
+        margin-top: rem-calc(10);
+        .input-box {
+          margin-bottom: 0;
+          margin-left: rem-calc(30);
+          float: none;
+          display: inline-block;
+          select {
+            @include background-triangle($white);
+            color: $white;
+            border-bottom-color: $white;
+            font-size: rem-calc(18);
+            padding: rem-calc(0 20 5 5);
+            height: rem-calc(34);
+            background-size: rem-calc(12 12);
+            background-position: $global-right (-$form-spacing) top rem-calc(10);
+            option {
+              color: $dark-gray;
+              padding: rem-calc(2 2 2 6);
+            }
+          }
+        }
+      }
+    }
+  }
+  .table-estates {
+    background-color: $white;
+    padding: rem-calc(50 35 80);
+    @include breakpoint(medium down) {
+      padding: rem-calc(20 15);
+      font-size: 80%;
+    }
+    @include breakpoint(iphone5 down) {
+      font-size: 70%;
+      padding: rem-calc(20 2);
+    }
+    .row {
+      padding: rem-calc(30 0 5);
+      border-bottom: 1px solid scale-color($medium-gray, $lightness: 30%);
+      @include breakpoint(medium down) {
+        padding: rem-calc(10 0 5);
+      }
+      &:not(.header):hover {
+        background-color: $light-gray;
+      }
+      &.free {
+        .status {
+          color: #33ad50;
+        }
+      }
+      &.reserved {
+        .status {
+          color: red;
+        }
+      }
+      .column.name {
+        white-space: nowrap;
+      }
+    }
+    .estate {
+      display: block;
+    }
+    .header {
+      border: none;
+      margin-bottom: rem-calc(15);
+      color: scale-color($medium-gray, $lightness: -20%);
+      @include breakpoint(medium down) {
+        padding: rem-calc(0 5);
+      }
+      a {
+        color: scale-color($medium-gray, $lightness: -20%);
+        &:hover {
+          color: scale-color($medium-gray, $lightness: -50%);
+          text-decoration: underline;
+        }
+      }
+    }
+    .bedrooms {
+      @include breakpoint(medium down) {
+        width: 20%;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+      }
+    }
+  }
+
+  .contact-us {
+    @include linear-gradient(to right, #069c95 40%, #33ad50 80%);
+    padding: rem-calc(90 0 60);
+    color: $white;
+    @include breakpoint(medium down) {
+      padding: rem-calc(40 0 60);
+      .row>.column {
+        margin-bottom: rem-calc(35);
+      }
+    }
+    h1 {
+      font-size: rem-calc(50);
+      margin-bottom: rem-calc(75);
+      @include breakpoint(medium down) {
+        font-size: rem-calc(32);
+        margin-bottom: rem-calc(25);
+      }
+    }
+    h3 {
+      font-size: rem-calc(30);
+    }
+    hr {
+      margin: rem-calc(15) auto rem-calc(15);
+      background-color: $white;
+      width: 25%;
+    }
+    a {
+      font-size: rem-calc(22);
+      color: $white;
+      &:hover {
+        color: $white-hover;
+      }
+    }
+  }
+  .more-estates {
+    padding: rem-calc(120 0 100);
+    @include breakpoint(medium down) {
+      padding: rem-calc(40 0 80);
+    }
+    h1 {
+      font-size: rem-calc(50);
+      @include breakpoint(medium down) {
+        font-size: rem-calc(26);
+        line-height: 1.2;
+      }
+    }
+    p {
+      //color: #9496a0;
+    }
+    .offers-carousel {
+      margin: rem-calc(45) auto 0;
+    }
+    .owl-item {
+      padding: 0 0.55556rem;
+    }
+    .top-offer-object {
+      position: relative;
+      background-color: $white;
+      box-shadow: 0px 2px 3px rgba($black, 0.2);
+      &>div {
+        padding: 0 1rem;
+      }
+      .object-wrapper {
+        position: relative;
+        padding: 0;
+        margin-bottom: rem-calc(6);
+        overflow: hidden;
+        .object-image {
+          overflow: hidden;
+          position: relative;
+          height: 260px;
+          img {
+            position: absolute;
+            height: 260px;
+            max-width: inherit;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                    transform: translate(-50%,-50%);
+          }
+        }
+        .object-info {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          text-align: center;
+          color: $white;
+          padding: 3rem 0 0.75rem;
+          background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+          background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+          background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000', GradientType=0 );
+          -webkit-transition: all 0.33s ease 0.2s;
+          transition: all 0.33s ease 0.2s;
+          &.has-estates {
+            bottom: -80px;
+          }
+          h3 {
+            margin: 0;
+          }
+          hr {
+            margin: 5px auto;
+            width: 10%;
+          }
+          .place {
+            @include place-region-icon;
+          }
+          .region {
+            @include place-region-icon;
+          }
+        }
+      }
+      .estates-info {
+        //font-size: rem-calc(15);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $medium-gray;
+        .icon {
+          padding-top: 5px;
+          background-color: $white;
+          -webkit-transition: background-color 0.33s ease 0s, border-color 0.33s ease 0s;
+          transition: background-color 0.33s ease 0s, border-color 0.33s ease 0s;
+          .promo-text {
+            font-size: rem-calc(10);
+            color: $orange-color;
+            text-transform: uppercase;
+            white-space: nowrap;
+            position: relative;
+            top: -5px;
+            -webkit-transition: color 0.33s ease 0s;
+            transition: color 0.33s ease 0s;
+          }
+          svg {
+            width: 36px;
+            height: 36px;
+            path {
+              fill: $dark-gray;
+              -webkit-transition: fill 0.33s ease 0s;
+              transition: fill 0.33s ease 0s;
+            }
+          }
+        }
+        .estate-rzp,
+        .estate-complete-txt {
+          color: #858585;
+          font-family: 'hkgrotesk-light', Arial, sans-serif;
+          text-transform: none;
+        }
+        .estate-area,
+        .esate-completed {
+          color: $dark-gray;
+          font-family: 'hkgrotesk-bold', Arial, sans-serif;
+          text-transform: none;
+        }
+        &:hover {
+          .icon {
+            //background-color: $dark-gray;
+            //border-color: $white;
+            svg {
+              path {
+                fill: scale-color($dark-gray, $lightness: 60%)
+              }
+            }
+          }
+          .object-info {
+          }
+          .promo-text {
+            color: $white;
+          }
+        }
+        .view-gallery,
+        .view-offer {
+          font-size: rem-calc(13);
+          //text-transform: uppercase;
+          color: #069c95;
+          text-align: center;
+          display: block;
+          &:hover {
+            color: scale-color(#069c95, $lightness: 10%);
+          }
+          @include breakpoint(medium down) {
+            font-size: rem-calc(16);
+          }
+        }
+      }
+      .show-all-top-estates {
+        text-align: center;
+        margin-top: rem-calc(16);
+        .button.gray {
+          color: $light-gray;
+          border-color: $light-gray;
+          &:hover {
+            color: $dark-gray;
+            background-color: $light-gray;
+          }
+        }
+      }
+      &:hover {
+        .object-info {
+          &.has-estates {
+            bottom: 0;
+            padding-top: 15rem;
+            -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.39,0.575,0.565,1), padding 0.4s cubic-bezier(0.39,0.575,0.565,1);
+            transition: bottom 0.4s cubic-bezier(0.39,0.575,0.565,1), padding 0.4s cubic-bezier(0.39,0.575,0.565,1);
+          }
+        }
+      }
+    }
+    .button {
+      &.alt {
+        margin-top: rem-calc(36);
+        margin-bottom: rem-calc(40);
+        padding-bottom: rem-calc(16);
+        border-bottom: 1px solid $white;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        &:hover {
+          padding-bottom: rem-calc(8);
+          margin-bottom: rem-calc(48);
+        }
+      }
+    }
+    .all-top-offers {
+      font-size: 1rem;
+      //color: $white;
+      //border-color: $white;
+      margin-top: rem-calc(40);
+      margin-bottom: rem-calc(100);
+      @include breakpoint(medium down) {
+        margin-bottom: rem-calc(30);
+      }
+    }
+  }
+  .object-top-offers {
+    .top-offer-object {
+      position: relative;
+      background-color: $white;
+      box-shadow: 0px 2px 3px rgba($black, 0.2);
+      margin-bottom: rem-calc(30);
+      &>div {
+        padding: 0 1rem;
+      }
+      .object-wrapper {
+        position: relative;
+        padding: 0;
+        margin-bottom: rem-calc(6);
+        overflow: hidden;
+        .object-image {
+          overflow: hidden;
+          position: relative;
+          height: 260px;
+          img {
+            position: absolute;
+            height: 260px;
+            max-width: inherit;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                    transform: translate(-50%,-50%);
+          }
+        }
+        .object-info {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          text-align: center;
+          color: $white;
+          padding: 3rem 0 0.75rem;
+          background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+          background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+          background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000', GradientType=0 );
+          -webkit-transition: all 0.33s ease 0.2s;
+          transition: all 0.33s ease 0.2s;
+          &.has-estates {
+            bottom: -80px;
+          }
+          h3 {
+            margin: 0;
+          }
+          hr {
+            margin: 5px auto;
+            width: 10%;
+          }
+          .place {
+            @include place-region-icon;
+          }
+          .region {
+            @include place-region-icon;
+          }
+        }
+      }
+      .estates-info {
+        font-size: rem-calc(15);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $medium-gray;
+        .icon {
+          padding-top: 5px;
+          background-color: $white;
+          -webkit-transition: background-color 0.33s ease 0s, border-color 0.33s ease 0s;
+          transition: background-color 0.33s ease 0s, border-color 0.33s ease 0s;
+          .promo-text {
+            font-size: rem-calc(10);
+            color: $orange-color;
+            text-transform: uppercase;
+            white-space: nowrap;
+            position: relative;
+            top: -5px;
+            -webkit-transition: color 0.33s ease 0s;
+            transition: color 0.33s ease 0s;
+          }
+          svg {
+            width: 36px;
+            height: 36px;
+            path {
+              fill: $dark-gray;
+              -webkit-transition: fill 0.33s ease 0s;
+              transition: fill 0.33s ease 0s;
+            }
+          }
+        }
+        .estate-rzp,
+        .estate-complete-txt {
+          color: #858585;
+          font-family: 'hkgrotesk-light', Arial, sans-serif;
+          text-transform: none;
+        }
+        .estate-area,
+        .esate-completed {
+          color: $dark-gray;
+          font-family: 'hkgrotesk-bold', Arial, sans-serif;
+          text-transform: none;
+        }
+        &:hover {
+          .icon {
+            //background-color: $dark-gray;
+            //border-color: $white;
+            svg {
+              path {
+                fill: scale-color($dark-gray, $lightness: 60%)
+              }
+            }
+          }
+          .object-info {
+          }
+          .promo-text {
+            color: $white;
+          }
+        }
+        .view-offer {
+          font-size: rem-calc(13);
+          //text-transform: uppercase;
+          color: #069c95;
+          text-align: center;
+          display: block;
+          &:hover {
+            color: scale-color(#069c95, $lightness: 10%);
+          }
+          @include breakpoint(medium down) {
+            font-size: rem-calc(16);
+          }
+        }
+      }
+      .show-all-top-estates {
+        text-align: center;
+        margin-top: rem-calc(16);
+        .button.gray {
+          color: $light-gray;
+          border-color: $light-gray;
+          &:hover {
+            color: $dark-gray;
+            background-color: $light-gray;
+          }
+        }
+      }
+      &:hover {
+        .object-info {
+          &.has-estates {
+            bottom: 0;
+            padding-top: 15rem;
+            -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.39,0.575,0.565,1), padding 0.4s cubic-bezier(0.39,0.575,0.565,1);
+            transition: bottom 0.4s cubic-bezier(0.39,0.575,0.565,1), padding 0.4s cubic-bezier(0.39,0.575,0.565,1);
+          }
+        }
+      }
+    }
+  }
+}
