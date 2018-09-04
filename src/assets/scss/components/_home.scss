@@ -97,6 +97,7 @@ section.search {
     .slide-info {
       padding: 15px 30px 10px;
       background-color: rgba(255, 255, 255, 0.85);
+      margin-bottom: rem-calc(32);
       @include breakpoint(medium down) {
         border-bottom: 1px solid $medium-gray;
         @include flex-grid-column(12, 60);

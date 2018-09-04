@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"city",
+				"city-name"
+			],
+			[
 				"no",
 				"nowrap"
 			],
@@ -510,10 +514,6 @@
 			[
 				"borde",
 				"border-radius"
-			],
-			[
-				"bca",
-				"background-color"
 			]
 		]
 	},
@@ -529,10 +529,29 @@
 			}
 		},
 		{
-			"file": "src/assets/scss/components/_realtyp.scss",
+			"file": "src/assets/scss/components/_addon.scss",
 			"settings":
 			{
-				"buffer_size": 4970,
+				"buffer_size": 7134,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "_addon.scss"
+			}
+		},
+		{
+			"file": "src/pages/contact.html",
+			"settings":
+			{
+				"buffer_size": 6600,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/assets/scss/components/_contact.scss",
+			"settings":
+			{
+				"buffer_size": 4331,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -595,13 +614,17 @@
 		"/E/rp",
 		"/E/rp/src",
 		"/E/rp/src/assets",
-		"/E/rp/src/assets/js",
 		"/E/rp/src/assets/scss",
 		"/E/rp/src/assets/scss/components",
-		"/E/rp/src/layouts"
+		"/E/rp/src/layouts",
+		"/E/rp/src/pages"
 	],
 	"file_history":
 	[
+		"/E/rp/src/pages/contact.html",
+		"/E/rp/src/assets/scss/components/_home.scss",
+		"/E/rp/src/assets/scss/components/_realtyp.scss",
+		"/E/rp/src/assets/scss/app.scss",
 		"/E/rp/src/assets/scss/components/_forms.scss",
 		"/E/rp/src/assets/scss/components/_topbar.scss",
 		"/E/rp/src/assets/scss/components/_property.scss",
@@ -620,8 +643,6 @@
 		"/E/rp/src/assets/scss/components/_blog.scss",
 		"/E/rp/src/assets/scss/components/_contact.scss",
 		"/E/rp/src/pages/search.html",
-		"/E/rp/src/assets/scss/components/_realtyp.scss",
-		"/E/rp/src/assets/scss/components/_home.scss",
 		"/E/rp/src/pages/service-3.html",
 		"/E/rp/src/pages/blog.html",
 		"/E/rp/src/pages/about.html",
@@ -636,13 +657,11 @@
 		"/E/rp/src/pages/index.html",
 		"/E/rp/bower_components/foundation-sites/scss/components/_callout.scss",
 		"/E/rp/src/layouts/search.html",
-		"/E/rp/src/assets/scss/app.scss",
 		"/E/rp/src/pages/object-video.html",
 		"/E/rp/src/assets/scss/components/_projects.scss",
 		"/E/rp/node_modules/hover.css/scss/_options.scss",
 		"/E/rp/config.yml",
 		"/E/rp/package.json",
-		"/E/rp/src/pages/contact.html",
 		"/E/rp/src/layouts/blogpost.html",
 		"/E/rp/src/pages/blog-article.html",
 		"/E/rp/src/assets/scss/components/_mobile.scss",
@@ -733,7 +752,7 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -747,6 +766,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"city-name",
 			"linear",
 			"#069c95",
 			"svg",
@@ -873,8 +893,7 @@
 			"@extend",
 			"place-region-icon",
 			"scale-color",
-			"\n    <div class=\"small-12 medium-4 columns\">\n      <div class=\"actual-offer-object\">\n        <img src=\"http://placehold.it/380x260\" />\n        <div class=\"small-12 columns\">\n          <p>Offer 1 heading</p>\n          <a href=\"#\" class=\"button\">Go</a>\n        </div>\n      </div>\n    </div>",
-			"item"
+			"\n    <div class=\"small-12 medium-4 columns\">\n      <div class=\"actual-offer-object\">\n        <img src=\"http://placehold.it/380x260\" />\n        <div class=\"small-12 columns\">\n          <p>Offer 1 heading</p>\n          <a href=\"#\" class=\"button\">Go</a>\n        </div>\n      </div>\n    </div>"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -926,7 +945,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -948,7 +967,10 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"SL.17.region_keys":
+							[
+							],
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -956,37 +978,104 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/assets/scss/components/_realtyp.scss",
+					"file": "src/assets/scss/components/_addon.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4970,
+						"buffer_size": 7134,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4861,
-								4861
+								7134,
+								7134
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"SL.22.region_keys":
+							[
+							],
+							"auto_name": "_addon.scss",
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5265.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/pages/contact.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6600,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": -0.0,
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/assets/scss/components/_contact.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4331,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1895,
+								1895
+							]
+						],
+						"settings":
+						{
+							"SL.26.region_keys":
+							[
+							],
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 765.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1023,6 +1112,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
 	"output.doc":
 	{
 		"height": 0.0
@@ -1055,7 +1148,7 @@
 		[
 			[
 				"",
-				"E:\\plhome\\plhome.sublime-project"
+				"E:\\helena\\helena.sublime-project"
 			]
 		],
 		"width": 380.0
