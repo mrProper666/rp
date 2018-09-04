@@ -57,6 +57,75 @@
       }
     }
   }
+  .new-offline {
+    padding-top: rem-calc(35);
+    padding-bottom: rem-calc(50);
+    background-image: linear-gradient(to bottom, #079c95, #49c060);
+    @include breakpoint(medium up) {
+      padding-top: rem-calc(95);
+      padding-bottom: rem-calc(150);
+    }
+    .panel {
+      border-radius: 10px;
+      background-color: $white;
+      box-shadow: 0 23px 27px 0 rgba($black, 0.12);
+      padding-top: rem-calc(60);
+      padding-bottom: rem-calc(50);
+      margin-bottom: rem-calc(35);
+      @include breakpoint(small only) {
+        padding-top: rem-calc(30);
+        border-radius: 0px;
+      }
+      h2 {
+        font-size: rem-calc(30);
+        color: $black;
+        margin-bottom: rem-calc(32);
+      }
+      .city-name {
+        color: $black;
+        font-size: rem-calc(24);
+        padding-bottom: rem-calc(15);
+        font-family: 'hkgrotesk-bold';
+        &:before {
+          margin-bottom: rem-calc(15);
+          content: "";
+          display: block;
+          width: 42px;
+          height: 3px;
+          background-image: linear-gradient(to bottom, #079c95, #49c060);
+        }
+      }
+      .address {
+        @include breakpoint(small only) {
+          margin-bottom: rem-calc(35);
+        }
+      }
+      p {
+        color: $black;
+        margin-bottom: 0;
+        line-height: 1.4;
+      }
+      a {
+        color: $black;
+        &:hover {
+          color: #079c95;
+        }
+      }
+    }
+    .icon-wrapper {
+      width: rem-calc(215);
+      height: rem-calc(215);
+      border-radius: 110px;
+      background-color: #ffffff;
+      box-shadow: 0 12px 25px 0 rgba($black, 0.06);
+      margin: 0 auto;
+      text-align: center;
+      line-height: 215px;
+      @include breakpoint(small only) {
+        margin-bottom: rem-calc(30);
+      }
+    }
+  }
   .ofline-info {
     background-color: $white;
     padding: rem-calc(50 0 50);

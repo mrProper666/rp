@@ -1,0 +1,391 @@
+body {
+    opacity: 0
+}
+
+main div[class*=content] p a,main div[class*=content] ul a {
+    text-decoration: underline
+}
+
+main div[class*=content] p a:focus,main div[class*=content] p a:hover {
+    text-decoration: none
+}
+
+div.sticky {
+    z-index: 5
+}
+
+div.sticky header {
+    -webkit-transition: padding .4s;
+    transition: padding .4s
+}
+
+div.sticky.is-stuck header {
+    padding: .44444rem 0
+}
+
+.sticky-container {
+    -webkit-transition: all .4s;
+    transition: all .4s
+}
+
+.owl-carousel:not(.slideshow) {
+    position: relative
+}
+
+.owl-carousel:not(.slideshow) .owl-nav {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1
+}
+
+.owl-carousel:not(.slideshow) .owl-nav>div {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 25px;
+    height: 50px
+}
+
+.owl-carousel:not(.slideshow) .owl-nav>div:hover {
+    opacity: .75
+}
+
+.owl-carousel:not(.slideshow) .owl-nav .owl-prev {
+    left: -30px
+}
+
+.owl-carousel:not(.slideshow) .owl-nav .owl-next {
+    right: -30px
+}
+
+.owl-carousel:not(.slideshow) .owl-dots {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.owl-carousel:not(.slideshow) .owl-dot {
+    display: inline-block;
+    margin-right: 10px
+}
+
+.owl-carousel:not(.slideshow) .owl-dot:last-child {
+    margin-right: 0
+}
+
+.owl-carousel:not(.slideshow) .owl-dot span {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    display: block;
+    -webkit-transition: all .4s;
+    transition: all .4s
+}
+
+.owl-carousel:not(.slideshow) .owl-dot:hover span {
+    border-color: #666;
+    background-color: #eee
+}
+
+.owl-carousel:not(.slideshow) .owl-dot.active span,.owl-carousel:not(.slideshow) .owl-dot.active:hover span {
+    border-color: #09bb82;
+    background-color: #09bb82
+}
+
+.owl-carousel.slideshow .slide-info {
+    padding: 15px 30px 10px;
+    background-color: rgba(255,255,255,.85);
+    text-align: left;
+    margin-bottom: 2rem
+}
+
+.owl-carousel.slideshow .slide-info h1 {
+    color: #000;
+    line-height: 1
+}
+
+.owl-carousel.slideshow .slide-info hr {
+    border-bottom-color: #09bb82
+}
+
+.owl-carousel.slideshow .slide-info p {
+    line-height: 1.4;
+    margin-bottom: 30px
+}
+
+.owl-item .item-box {
+    height: 100%
+}
+
+.PortfolioPage.AboutusPage .about-header .logo {
+    margin-bottom: 0
+}
+
+.PortfolioPage.AboutusPage .about-header h1 {
+    color: #f7f7f7;
+    margin: 0
+}
+
+.PortfolioPage .full-portfolio {
+    padding: 3.11111rem 0 5.27778rem
+}
+
+.PortfolioPage .full-portfolio .column {
+    margin-bottom: 1.6666rem
+}
+
+.Project .table-estates .data a.estate {
+    position: relative
+}
+
+.Project .table-estates a.estate .special-price {
+    color: red
+}
+
+.Project .menu-wrapper.mobile #hitArea,.RealEstate .menu-wrapper.mobile #hitArea {
+    overflow: hidden;
+    position: relative;
+    height: 43px
+}
+
+.Project .menu-wrapper.mobile .menu,.RealEstate .menu-wrapper.mobile .menu {
+    position: absolute;
+    margin-left: 0
+}
+
+.SearchPage .table-estates h3 {
+    margin-top: 50px
+}
+
+span.promo {
+    width: 25px;
+    display: inline-block
+}
+
+#SuccessContactBox,.estate-subscribe-form label,.send-listing-form label {
+    display: none
+}
+
+.project-gallery .owl-carousel .owl-item {
+    height: 415px;
+    width: 100%
+}
+
+.interior .owl-carousel .owl-item {
+    height: 370px;
+    width: 100%
+}
+
+.gmap {
+    min-height: 550px
+}
+
+.amenities ul li .icon {
+    margin-right: 8px
+}
+
+.RealEstate .request-form form div.input-text {
+    padding: 0
+}
+
+.popup-info img {
+    margin-top: 20px
+}
+
+.popup-info p {
+    color: #6f6f6f;
+    font-size: 15px
+}
+
+.popup-info h3 {
+    font-size: 30px;
+    font-family: hkgrotesk-light,Arial,sans-serif
+}
+
+.popup-info.added h3 {
+    color: #09bb82
+}
+
+.popup-info.removed h3 {
+    color: #ff0030
+}
+
+.popup-info.exists h3 {
+    color: #ffae00
+}
+
+.article .related-posts ul {
+    margin-bottom: 3rem
+}
+
+.article .related-posts a {
+    color: #09bb82;
+    text-decoration: underline
+}
+
+.article .related-posts a:hover {
+    text-decoration: none
+}
+
+.estate-subscribe-form,.send-listing-form {
+    background-color: #002230;
+    padding: 2rem
+}
+
+.estate-subscribe-form input[type=checkbox]+label,.send-listing-form input[type=checkbox]+label {
+    display: inline-block
+}
+
+.estate-subscribe-form p,.send-listing-form p {
+    color: #fff
+}
+
+form div.input-text {
+    position: relative
+}
+
+.input-text.requiredField.error,.send-listing-form .input-text.error {
+    border-color: red!important
+}
+
+.input-text.requiredField.error+span.error,.send-listing-form .input-text.error+span.error {
+    color: red;
+    font-size: .8rem;
+    line-height: 1;
+    position: absolute;
+    bottom: 4px;
+    left: 4px
+}
+
+.ContactsPage .input-text.requiredField.error+span.error,.send-listing-form .input-text.error+span.error {
+    color: #fff;
+    background-color: red;
+    padding: 4px;
+    bottom: 0;
+    left: 0;
+    width: 100%
+}
+
+.offers-carousel .svg path,.offers-carousel svg path {
+    fill: #fff
+}
+
+.send-listing-form input[hidden=hidden] {
+    display: none
+}
+
+#SubscriptionForm {
+    padding: 1rem;
+    background-color: #002230
+}
+
+#SubscriptionForm .input-box {
+    color: #fefefe
+}
+
+#SubscriptionForm .input-box input,#SubscriptionForm .input-box label {
+    border-bottom-color: #fefefe;
+    color: #fefefe
+}
+
+#SubscriptionForm .action {
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-appearance: none;
+    transition: background-color .25s ease-out,color .25s ease-out,border-color .25s ease-out;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: .85em 1em;
+    margin: 0 0 1rem;
+    font-size: .9rem;
+    background-color: #09bb82;
+    color: #f7f7f7;
+    width: 100%
+}
+
+.callout.cookies {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0
+}
+
+@media screen and (max-width: 63.9375em) {
+    .fancybox-inner .estate-subscribe-form,.fancybox-inner .send-listing-form {
+        padding:1rem
+    }
+
+    .owl-carousel.slideshow .slide-info h1 {
+        font-size: 1.8rem;
+    }
+}
+
+.BlogPost .prev-next {
+    margin-bottom: 45px
+}
+
+div.sticky.share {
+    z-index: 1
+}
+
+.ProjectCategoryPage .header .bg-wrapper {
+    background-size: contain;
+}
+
+.pined-posts {
+    margin-bottom: 35px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cecece;
+}
+
+.pined-posts .blog-article-object {
+    position: relative;
+}
+
+.pined-posts .blog-article-object:before {
+    content: url(../images/pin-post.svg);
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 0 0 15px;
+}
+
+.Page {
+    padding-top: 55px;
+    padding-bottom: 95px;
+}
+
+.field.checkbox {
+    margin-top: 35px;
+}
+
+.field.checkbox input {
+    margin-bottom: 0;
+}
+
+.field.checkbox input.error+span {
+    color: red;
+}
+
+.ContactsPage .online form .input-text input, .ContactsPage .online form .input-text textarea {
+    padding: 1.25rem .27778rem;
+}
+
+#Form_subscribeForm_Gdpr_Holder {
+    margin-bottom: 2rem;
+}
+
+#Form_subscribeForm_Gdpr_Holder label {
+    color: #ffffff;
+    display: inline;
+}
